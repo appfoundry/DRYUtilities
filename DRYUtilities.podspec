@@ -9,20 +9,12 @@
 
 Pod::Spec.new do |s|
   s.name             = "DRYUtilities"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of DRYUtilities."
-  s.description      = <<-DESC
-                       An optional longer description of DRYUtilities
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
-                       DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/DRYUtilities"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.version          = "1.0.0"
+  s.summary          = "DRYUtilities provides common utilities used in projects by AppFoundry"
+  s.homepage         = "https://github.com/appfoundry/DRYUtilities"
   s.license          = 'MIT'
-  s.author           = { "Michael Seghers" => "michael.seghers@ida-mediafoundry.be" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/DRYUtilities.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { "Michael Seghers" => "michael.seghers@appfoundry.be" }
+  s.source           = { :git => "https://github.com/appfoundry/DRYUtilities.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
@@ -32,7 +24,6 @@ Pod::Spec.new do |s|
     'DRYUtilities' => ['Pod/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'Foundation'
+  s.weak_frameworks = 'UIKit', 'CoreData'
 end

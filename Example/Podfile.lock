@@ -1,0 +1,21 @@
+PODS:
+  - DRYUtilities (0.1.0)
+  - OCHamcrest (4.1.1)
+  - OCMockito (1.4.0):
+    - OCHamcrest (~> 4.0)
+
+DEPENDENCIES:
+  - DRYUtilities (from `../`)
+  - OCHamcrest (~> 4.1.1)
+  - OCMockito (~> 1.4.0)
+
+EXTERNAL SOURCES:
+  DRYUtilities:
+    :path: ../
+
+SPEC CHECKSUMS:
+  DRYUtilities: bc18b9f53e190cf18474d908031f570c550a4861
+  OCHamcrest: af1c7c5ea345de69ea6c9c2958f65f3044e5c420
+  OCMockito: 991936bb775cc4c27f063d38f5e17b9161fbd21c
+
+COCOAPODS: 0.35.0
