@@ -20,7 +20,7 @@ it, simply add the following line to your Podfile:
 
 ## Author
 
-Michael Seghers, michael.seghers@ida-mediafoundry.be
+Mike Seghers, mike@appfoundry.be
 
 ## License
 
