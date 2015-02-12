@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "DRYUtilities"
-  s.version          = "1.0.2"
+  s.version          = "1.0.3"
   s.summary          = "DRYUtilities provides common utilities used in projects by AppFoundry"
   s.homepage         = "https://github.com/appfoundry/DRYUtilities"
   s.license          = 'MIT'

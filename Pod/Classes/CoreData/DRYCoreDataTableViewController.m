@@ -58,7 +58,11 @@
 }
 
 - (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
-    return [self.fetchedResultsController sectionIndexTitles];
+    NSArray *result = nil;
+    if (_needsSectionIndex) {
+        result = [self.fetchedResultsController sectionIndexTitles];
+    }
+    return result;
 }
 
 #pragma mark - NSFetchedResultsControllerDelegate
