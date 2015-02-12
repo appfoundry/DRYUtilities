@@ -7,18 +7,18 @@
 //
 
 #import "DRYUtilitiesTests.h"
-#import "NSString+TemplateReplacement.h"
+#import "NSString+DRYTemplateReplacement.h"
 
-@interface NSString_TemplateReplacementTest : XCTestCase
+@interface NSString_DRYTemplateReplacementTest : XCTestCase
 
 @end
 
-@implementation NSString_TemplateReplacementTest
+@implementation NSString_DRYTemplateReplacementTest
 
 - (void)testReplacementShouldBeDone {
     NSString *string = @"{key1}sometext{key2}";
     NSDictionary *replacementDictionary = @{@"key1" : @1, @"key2" : @"value2"};
-    assertThat([string stringByReplacingTemplatesWithValuesFromDictionary:replacementDictionary], is(equalTo(@"1sometextvalue2")));
+    assertThat([string dryStringByReplacingTemplatesWithValuesFromDictionary:replacementDictionary], is(equalTo(@"1sometextvalue2")));
 }
 
 @end
