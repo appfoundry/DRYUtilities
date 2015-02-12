@@ -6,6 +6,17 @@
 
 @interface NSString (DRYTemplateReplacement)
 
+/**
+Replace all occurrences of the keys in the given dictionary, prefixed with '{' and suffixed with '}', by the description of
+the value for that key. This method returns a new String.
+*/
 - (NSString *)dryStringByReplacingTemplatesWithValuesFromDictionary:(NSDictionary *)dictionary;
+
+/**
+Replace all occurrences of the keys in the given dictionary, prefixed with the given prefix and suffixed with the given suffix,
+by the description of the value for that key. This method returns a new String.
+*/
+- (NSString *)dryStringByReplacingTemplatesWithValuesFromDictionary:(NSDictionary *)dictionary withTemplatePrefix:(NSString *)prefix templateSuffix:(NSString *)suffix;
+
 
 @end
