@@ -15,5 +15,9 @@
     return nil;
 }
 
++ (id)dryNullOrValue:(id)value {
+    return value ? :[NSNull null];
+}
+
 
 @end

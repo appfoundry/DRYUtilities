@@ -14,6 +14,7 @@
 		27F2429F1A8A5B350079F8EC /* FallbackTestResource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27F2429E1A8A5B350079F8EC /* FallbackTestResource.plist */; };
 		27F242A71A8B51E90079F8EC /* SimpleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27F242A61A8B51E90079F8EC /* SimpleView.xib */; };
 		27F242A91A8B5F110079F8EC /* SimpleViewWithOwner.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27F242A81A8B5F110079F8EC /* SimpleViewWithOwner.xib */; };
+		27FBF5111ACA8ED500CACF79 /* NSNull+DRYNSNullSupportTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FBF5101ACA8ED500CACF79 /* NSNull+DRYNSNullSupportTest.m */; };
 		3323FA8487593501D5A68573 /* NSString+DRYTemplateReplacementTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3323F45878C77633CDF1A87B /* NSString+DRYTemplateReplacementTest.m */; };
 		3323FFA067BA3617BD7122AD /* NSObject+DRYNSNullSupportTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3323F004CE5F1FD711453EE1 /* NSObject+DRYNSNullSupportTest.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -51,6 +52,7 @@
 		27F2429E1A8A5B350079F8EC /* FallbackTestResource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FallbackTestResource.plist; sourceTree = "<group>"; };
 		27F242A61A8B51E90079F8EC /* SimpleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleView.xib; sourceTree = "<group>"; };
 		27F242A81A8B5F110079F8EC /* SimpleViewWithOwner.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleViewWithOwner.xib; sourceTree = "<group>"; };
+		27FBF5101ACA8ED500CACF79 /* NSNull+DRYNSNullSupportTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+DRYNSNullSupportTest.m"; sourceTree = "<group>"; };
 		3323F004CE5F1FD711453EE1 /* NSObject+DRYNSNullSupportTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DRYNSNullSupportTest.m"; sourceTree = "<group>"; };
 		3323F45878C77633CDF1A87B /* NSString+DRYTemplateReplacementTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DRYTemplateReplacementTest.m"; sourceTree = "<group>"; };
 		3F969BD88210D15A86B4647A /* Pods-DRYUtilities.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DRYUtilities.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DRYUtilities/Pods-DRYUtilities.debug.xcconfig"; sourceTree = "<group>"; };
@@ -121,6 +123,14 @@
 			path = Configuration;
 			sourceTree = "<group>";
 		};
+		27FBF50F1ACA8E9C00CACF79 /* NSNull */ = {
+			isa = PBXGroup;
+			children = (
+				27FBF5101ACA8ED500CACF79 /* NSNull+DRYNSNullSupportTest.m */,
+			);
+			path = NSNull;
+			sourceTree = "<group>";
+		};
 		3323F377C52CA7B4CDAF3B79 /* NSString */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +142,7 @@
 		3323F5681AC6914763671331 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				27FBF50F1ACA8E9C00CACF79 /* NSNull */,
 				3323F377C52CA7B4CDAF3B79 /* NSString */,
 				3323FE6E7E34F3A49DC48BBD /* NSObject */,
 			);
@@ -433,6 +444,7 @@
 				27F242871A8A4C0B0079F8EC /* DRYBaseDynamicPropertyProviderTest.m in Sources */,
 				27F2428C1A8A51F70079F8EC /* DRYPlistResourceReaderTest.m in Sources */,
 				3323FA8487593501D5A68573 /* NSString+DRYTemplateReplacementTest.m in Sources */,
+				27FBF5111ACA8ED500CACF79 /* NSNull+DRYNSNullSupportTest.m in Sources */,
 				3323FFA067BA3617BD7122AD /* NSObject+DRYNSNullSupportTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
