@@ -9,12 +9,13 @@
 
 Pod::Spec.new do |s|
   s.name             = "DRYUtilities"
-  s.version          = "1.0.7"
+  s.version          = "1.1.0"
   s.summary          = "DRYUtilities provides common utilities used in projects by AppFoundry"
   s.homepage         = "https://github.com/appfoundry/DRYUtilities"
   s.license          = 'MIT'
-  s.author           = { "Michael Seghers" => "michael.seghers@appfoundry.be" }
+  s.author           = { "Michael Seghers" => "mike.seghers@appfoundry.be" }
   s.source           = { :git => "https://github.com/appfoundry/DRYUtilities.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/AppFoundryBE'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
