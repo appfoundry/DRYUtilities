@@ -11,11 +11,11 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   DRYUtilities:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
   DRYUtilities: 812b71bebc8784ff349329508d3960e8889021fe
   OCHamcrest: 6f03ffa81d12feab872638490a44ab0a6d3aca10
   OCMockito: 4981140c9a9ec06c31af40f636e3c0f25f27e6b2
 
-COCOAPODS: 0.36.3
+COCOAPODS: 0.37.2

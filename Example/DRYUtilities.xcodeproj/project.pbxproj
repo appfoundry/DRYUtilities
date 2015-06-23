@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		15A3459867BB6DAE4C32480B /* libPods-DRYUtilities.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA13A83D0CA0B6AA5464FC3E /* libPods-DRYUtilities.a */; };
+		275003151B39645800CFAF6A /* NSString+DRYHexTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 275003141B39645800CFAF6A /* NSString+DRYHexTest.m */; };
 		27F242871A8A4C0B0079F8EC /* DRYBaseDynamicPropertyProviderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F242861A8A4C0B0079F8EC /* DRYBaseDynamicPropertyProviderTest.m */; };
 		27F2428C1A8A51F70079F8EC /* DRYPlistResourceReaderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F2428B1A8A51F70079F8EC /* DRYPlistResourceReaderTest.m */; };
 		27F2429D1A8A5B030079F8EC /* TestResource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27F2429C1A8A5B030079F8EC /* TestResource.plist */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		275003141B39645800CFAF6A /* NSString+DRYHexTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DRYHexTest.m"; sourceTree = "<group>"; };
 		27F242861A8A4C0B0079F8EC /* DRYBaseDynamicPropertyProviderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRYBaseDynamicPropertyProviderTest.m; sourceTree = "<group>"; };
 		27F2428B1A8A51F70079F8EC /* DRYPlistResourceReaderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRYPlistResourceReaderTest.m; sourceTree = "<group>"; };
 		27F2428D1A8A52290079F8EC /* DRYUtilitiesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DRYUtilitiesTests.h; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				3323F45878C77633CDF1A87B /* NSString+DRYTemplateReplacementTest.m */,
+				275003141B39645800CFAF6A /* NSString+DRYHexTest.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 				27F242871A8A4C0B0079F8EC /* DRYBaseDynamicPropertyProviderTest.m in Sources */,
 				27F2428C1A8A51F70079F8EC /* DRYPlistResourceReaderTest.m in Sources */,
 				3323FA8487593501D5A68573 /* NSString+DRYTemplateReplacementTest.m in Sources */,
+				275003151B39645800CFAF6A /* NSString+DRYHexTest.m in Sources */,
 				27FBF5111ACA8ED500CACF79 /* NSNull+DRYNSNullSupportTest.m in Sources */,
 				3323FFA067BA3617BD7122AD /* NSObject+DRYNSNullSupportTest.m in Sources */,
 			);
