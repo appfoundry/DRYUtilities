@@ -145,7 +145,8 @@
 }
 
 - (void)_checkIsEmpty {
-    self.isEmpty = (self.fetchedResultsController.sections.count == 0);
+    id<NSFetchedResultsSectionInfo> firstSectionInfo = self.fetchedResultsController.sections.firstObject;
+    self.isEmpty = firstSectionInfo.numberOfObjects == 0;
 }
 
 @end
