@@ -16,6 +16,34 @@
 
 @implementation DRYCoreDataTableViewController
 
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if(self) {
+        [self _initDRYCoreDataTableViewController];
+    }
+    return self;
+}
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if(self) {
+        [self _initDRYCoreDataTableViewController];
+    }
+    return self;
+}
+
+- (instancetype)initWithStyle:(UITableViewStyle)style {
+    self = [super initWithStyle:style];
+    if(self) {
+        [self _initDRYCoreDataTableViewController];
+    }
+    return self;
+}
+
+- (void)_initDRYCoreDataTableViewController {
+    self.isEmpty = YES;
+}
+
 - (void)_performFetch {
     if (self.fetchedResultsController) {
         NSError *error;
