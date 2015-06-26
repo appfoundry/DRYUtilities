@@ -11,7 +11,7 @@
 @interface DRYCoreDataTableViewController () {
     BOOL _beganUpdates;
 }
-
+@property(nonatomic, readwrite) BOOL isEmpty;
 @end
 
 @implementation DRYCoreDataTableViewController
@@ -22,6 +22,8 @@
         [self.fetchedResultsController performFetch:&error];
         if (error) {
             NSLog(@"[%@ %@] %@ (%@)", NSStringFromClass([self class]), NSStringFromSelector(_cmd), [error localizedDescription], [error localizedFailureReason]);
+        } else {
+            [self _checkIsEmpty];
         }
     }
     [self.tableView reloadData];
@@ -95,7 +97,6 @@
     }
 }
 
-
 - (void)controller:(NSFetchedResultsController *)controller
    didChangeObject:(id)anObject
        atIndexPath:(NSIndexPath *)indexPath
@@ -126,6 +127,7 @@
 - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller {
     if (_beganUpdates) {
         [self.tableView endUpdates];
+        [self _checkIsEmpty];
         _beganUpdates = NO;
     }
 }
@@ -140,6 +142,10 @@
     } else {
         [self performSelector:@selector(endSuspensionOfUpdatesDueToContextChanges) withObject:nil afterDelay:0];
     }
+}
+
+- (void)_checkIsEmpty {
+    self.isEmpty = (self.fetchedResultsController.sections.count == 0);
 }
 
 @end

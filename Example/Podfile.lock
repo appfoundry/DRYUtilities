@@ -1,5 +1,5 @@
 PODS:
-  - DRYUtilities (1.2.0)
+  - DRYUtilities (1.3.0)
   - OCHamcrest (4.1.1)
   - OCMockito (1.4.0):
     - OCHamcrest (~> 4.0)
@@ -11,10 +11,10 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   DRYUtilities:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
-  DRYUtilities: 34d024f28a96756a1ffd64cb5231441ef9f21882
+  DRYUtilities: 2ffca1d9a59e0700d0ee99b7a7458a3f92c17fb8
   OCHamcrest: 6f03ffa81d12feab872638490a44ab0a6d3aca10
   OCMockito: 4981140c9a9ec06c31af40f636e3c0f25f27e6b2
 

@@ -14,6 +14,11 @@
 @property(strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 
 /**
+ Property indicating wether the FetchedResultsController was able to find data.
+ */
+@property(nonatomic, readonly) BOOL isEmpty;
+
+/**
 Call this method when you want to avoid the fetched results controller to report updates of its content.
 
 You typically do this when you let the user edit the data in the table view. Since the changes are
