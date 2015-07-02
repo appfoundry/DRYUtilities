@@ -34,6 +34,7 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		734394968D041F17C4ABAFB3 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4658F80F41F57A5BA5CABF62 /* libPods-Tests.a */; };
+		E56459F61B454B6B004DCF97 /* NSString+DRYUtilTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E56459F51B454B6B004DCF97 /* NSString+DRYUtilTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		B4A8735989C3368DF6C69D42 /* DRYUtilities.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DRYUtilities.podspec; path = ../DRYUtilities.podspec; sourceTree = "<group>"; };
 		C491B585278DD8C64C95C841 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DB5C04727DEB240CC61B4F8C /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E56459F51B454B6B004DCF97 /* NSString+DRYUtilTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DRYUtilTest.m"; sourceTree = "<group>"; };
 		E6243E93EB4140649D8A1857 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		FA13A83D0CA0B6AA5464FC3E /* libPods-DRYUtilities.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DRYUtilities.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -148,6 +150,7 @@
 			children = (
 				3323F45878C77633CDF1A87B /* NSString+DRYTemplateReplacementTest.m */,
 				275003141B39645800CFAF6A /* NSString+DRYHexTest.m */,
+				E56459F51B454B6B004DCF97 /* NSString+DRYUtilTest.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -459,6 +462,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27F242871A8A4C0B0079F8EC /* DRYBaseDynamicPropertyProviderTest.m in Sources */,
+				E56459F61B454B6B004DCF97 /* NSString+DRYUtilTest.m in Sources */,
 				27F2428C1A8A51F70079F8EC /* DRYPlistResourceReaderTest.m in Sources */,
 				3323FA8487593501D5A68573 /* NSString+DRYTemplateReplacementTest.m in Sources */,
 				275003271B39814400CFAF6A /* DRYSecurityStoreWrapperTest.m in Sources */,
