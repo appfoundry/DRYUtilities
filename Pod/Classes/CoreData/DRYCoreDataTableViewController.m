@@ -64,6 +64,7 @@
         if (_fetchedResultsController) {
             [self _performFetch];
         } else {
+            self.isEmpty = YES;
             [self.tableView reloadData];
         }
     }
