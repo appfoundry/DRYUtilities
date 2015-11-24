@@ -6,5 +6,5 @@
 #import <Foundation/Foundation.h>
 
 
-@interface ExampleDRYResourceReaderViewController : UIViewController
+@interface ExampleConfigurationViewController : UIViewController
 @end

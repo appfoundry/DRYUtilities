@@ -15,12 +15,17 @@
 
 @implementation NSObject_DRYNSNullSupportTest
 
-- (void)testNSObjectsDefaultToNOForisNSNull {
+- (void)testNSObjectsDefaultToNOForIsNSNull {
     assertThatBool([@"" dryIsNSNull], isFalse());
 }
 
 - (void)testNSNullIsYesForIsNull {
     assertThatBool([[NSNull null] dryIsNSNull], isTrue());
+}
+
+- (void)testNilIsYesForIsNull {
+    NSString *string = nil;
+    assertThatBool([string dryIsNSNull], isFalse());
 }
 
 - (void)testValueOrNullReturnsObjectForObjects {

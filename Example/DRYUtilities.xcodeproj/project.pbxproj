@@ -34,7 +34,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		734394968D041F17C4ABAFB3 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4658F80F41F57A5BA5CABF62 /* libPods-Tests.a */; };
 		AE03D157CCD1E8A0733EA34F /* ExampleDynamicPropertyProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = AE03D78BA75FC8DD9BE004BE /* ExampleDynamicPropertyProvider.m */; };
-		AE03D16E8FB0ADDEE230F4A5 /* ExampleDRYResourceReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE03D52CB4BB13E09EC2832B /* ExampleDRYResourceReaderViewController.m */; };
+		AE03D16E8FB0ADDEE230F4A5 /* ExampleConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE03D52CB4BB13E09EC2832B /* ExampleConfigurationViewController.m */; };
 		AE03D7903CDAF32AA5F83B07 /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE03D1A7383263FE15E428AD /* Configuration.plist */; };
 		AE03DD18A50D2F4BD623631A /* DefaultConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE03DC53530E181FD71CEE93 /* DefaultConfiguration.plist */; };
 		E56459F61B454B6B004DCF97 /* NSString+DRYUtilTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E56459F51B454B6B004DCF97 /* NSString+DRYUtilTest.m */; };
@@ -87,10 +87,10 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		AE03D1A7383263FE15E428AD /* Configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Configuration.plist; sourceTree = "<group>"; };
-		AE03D52CB4BB13E09EC2832B /* ExampleDRYResourceReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleDRYResourceReaderViewController.m; sourceTree = "<group>"; };
+		AE03D52CB4BB13E09EC2832B /* ExampleConfigurationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleConfigurationViewController.m; sourceTree = "<group>"; };
 		AE03D772B5E204F800C27F56 /* ExampleDynamicPropertyProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleDynamicPropertyProvider.h; sourceTree = "<group>"; };
 		AE03D78BA75FC8DD9BE004BE /* ExampleDynamicPropertyProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleDynamicPropertyProvider.m; sourceTree = "<group>"; };
-		AE03D9A9FD51EEFECDCFD367 /* ExampleDRYResourceReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleDRYResourceReaderViewController.h; sourceTree = "<group>"; };
+		AE03D9A9FD51EEFECDCFD367 /* ExampleConfigurationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleConfigurationViewController.h; sourceTree = "<group>"; };
 		AE03DC53530E181FD71CEE93 /* DefaultConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = DefaultConfiguration.plist; sourceTree = "<group>"; };
 		B0D0FA173411C76F6B1EB97D /* Pods-DRYUtilities.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DRYUtilities.release.xcconfig"; path = "Pods/Target Support Files/Pods-DRYUtilities/Pods-DRYUtilities.release.xcconfig"; sourceTree = "<group>"; };
 		B4A8735989C3368DF6C69D42 /* DRYUtilities.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DRYUtilities.podspec; path = ../DRYUtilities.podspec; sourceTree = "<group>"; };
@@ -296,8 +296,8 @@
 		AE03DAB5614C38CA792A8A78 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				AE03D52CB4BB13E09EC2832B /* ExampleDRYResourceReaderViewController.m */,
-				AE03D9A9FD51EEFECDCFD367 /* ExampleDRYResourceReaderViewController.h */,
+				AE03D52CB4BB13E09EC2832B /* ExampleConfigurationViewController.m */,
+				AE03D9A9FD51EEFECDCFD367 /* ExampleConfigurationViewController.h */,
 				AE03D78BA75FC8DD9BE004BE /* ExampleDynamicPropertyProvider.m */,
 				AE03D772B5E204F800C27F56 /* ExampleDynamicPropertyProvider.h */,
 			);
@@ -514,7 +514,7 @@
 				6003F5A7195388D20070C39A /* DRYViewController.m in Sources */,
 				EBD027CA1C046F91005E46D5 /* ExampleTableViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-				AE03D16E8FB0ADDEE230F4A5 /* ExampleDRYResourceReaderViewController.m in Sources */,
+				AE03D16E8FB0ADDEE230F4A5 /* ExampleConfigurationViewController.m in Sources */,
 				AE03D157CCD1E8A0733EA34F /* ExampleDynamicPropertyProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

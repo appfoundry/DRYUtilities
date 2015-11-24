@@ -117,10 +117,10 @@
             </objects>
             <point key="canvasLocation" x="629" y="246"/>
         </scene>
-        <!--ExampleDRY Resource Reader View Controller-->
+        <!--Example Configuration View Controller-->
         <scene sceneID="DBm-UD-tij">
             <objects>
-                <viewController id="uAq-8Q-ujy" customClass="ExampleDRYResourceReaderViewController" sceneMemberID="viewController">
+                <viewController id="uAq-8Q-ujy" customClass="ExampleConfigurationViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4Fe-df-kGq"/>
                         <viewControllerLayoutGuide type="bottom" id="9xQ-hU-K4o"/>

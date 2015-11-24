@@ -14,7 +14,7 @@
 @property(strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 
 /**
- Property indicating wether the FetchedResultsController was able to find data.
+ Property indicating whether the FetchedResultsController was able to find data.
  */
 @property(nonatomic, readonly) BOOL isEmpty;
 

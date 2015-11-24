@@ -3,12 +3,12 @@
 // Copyright (c) 2015 Michael Seghers. All rights reserved.
 //
 
-#import "ExampleDRYResourceReaderViewController.h"
+#import "ExampleConfigurationViewController.h"
 #import "DRYPlistResourceReader.h"
 #import "DRYBaseDynamicPropertyProvider.h"
 #import "ExampleDynamicPropertyProvider.h"
 
-@interface ExampleDRYResourceReaderViewController ()
+@interface ExampleConfigurationViewController ()
 
 @property(weak, nonatomic) IBOutlet UILabel *firstPropertyLabel;
 @property(weak, nonatomic) IBOutlet UILabel *secondPropertyLabel;
@@ -19,7 +19,7 @@
  * This controller show the working of the DRYResourceReader.
  * It can either be used standalone or in combination with a DRYBaseDynamicPropertyProvider to make you code even DRY'er
  */
-@implementation ExampleDRYResourceReaderViewController {
+@implementation ExampleConfigurationViewController {
     ExampleDynamicPropertyProvider *_propertyProvider;
 }
 
