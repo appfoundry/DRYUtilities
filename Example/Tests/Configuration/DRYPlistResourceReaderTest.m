@@ -30,12 +30,12 @@
 
 #pragma mark - Read property from plist without with fallback resource
 - (void)testReadProperty_shouldReturnPropertyFromPlist_evenIfFallbackIsAvailable {
-    _reader = [[DRYPlistResourceReader alloc] initWithPlistNamed:@"TestResource" andFallbackPlistNames:@"FallbackTestResource"];
+    _reader = [[DRYPlistResourceReader alloc] initWithPlistNamed:@"TestResource" andFallbackPlistNamed:@"FallbackTestResource"];
     assertThat([_reader readPropertyWithKey:@"testKey"], is(equalTo(@"testValue")));
 }
 
 - (void)testReadProperty_shouldReturnFallBackValueWhenKeyNotFoundAndFallbackAvailable {
-    _reader = [[DRYPlistResourceReader alloc] initWithPlistNamed:@"TestResource" andFallbackPlistNames:@"FallbackTestResource"];
+    _reader = [[DRYPlistResourceReader alloc] initWithPlistNamed:@"TestResource" andFallbackPlistNamed:@"FallbackTestResource"];
     assertThat([_reader readPropertyWithKey:@"fallbackKey"], is(equalTo(@"fallbackValue")));
 }
 

@@ -27,7 +27,7 @@
     return self;
 }
 
-- (instancetype)initWithPlistNamed:(NSString *)plistName andFallbackPlistNames:(NSString *)fallbackPlistName {
+- (instancetype)initWithPlistNamed:(NSString *)plistName andFallbackPlistNamed:(NSString *)fallbackPlistName {
     self = [self initWithPlistNamed:plistName];
     if (self) {
         NSString *defaultPath = [[NSBundle bundleForClass:[self class]] pathForResource:fallbackPlistName ofType:@"plist"];

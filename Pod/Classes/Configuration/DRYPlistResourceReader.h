@@ -15,6 +15,6 @@ A resource reader which reads data from a plist in the application bundle.
 @interface DRYPlistResourceReader : NSObject<DRYResourceReader>
 
 - (instancetype)initWithPlistNamed:(NSString *)plistName;
-- (instancetype)initWithPlistNamed:(NSString *)plistName andFallbackPlistNames:(NSString *)fallbackPlistName;
+- (instancetype)initWithPlistNamed:(NSString *)plistName andFallbackPlistNamed:(NSString *)fallbackPlistName;
 
 @end
