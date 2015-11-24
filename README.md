@@ -8,14 +8,15 @@
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
-Open the example project from the Example directory.
 This project contains example usages for all the utilities provided in DRUUtilities.
 
 Once you've started the app, you'll see a table containing a row for each example.
-Click on it and see the example in action.
+Click on it to see the example in action.
 
-### Configuration utilities [DRYResourceReader / DRYBaseDynamicPropertyProvider]
+### Configuration utilities
 #### DRYResourceReader 
+**Example usage:** `ExampleDRYResourceReaderV`iewController.m
+
 A `DRYResourceReader` exposes an operation to read a property from the resource based on a specified key.
 First of all you need to create a `DRYResourceReader`.
 DRYUtilities contains a `DRYPlistResourceReader` which can read .plist files. It also offers the ability to supply a fallback resource. 
@@ -37,13 +38,11 @@ Extend the `DRYBaseDynamicPropertyProvider` with properties matching the keys us
 @interface ExampleDynamicPropertyProvider : DRYBaseDynamicPropertyProvider
 
 @property (nonatomic, readonly) NSString *firstProperty;
-@property (nonatomic, readonly) NSString *secondProperty;
 
 @end
 
 @implementation ExampleDynamicPropertyProvider 
 @dynamic firstProperty;
-@dynamic secondProperty;
 @end
 ```
 
