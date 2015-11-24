@@ -17,7 +17,7 @@ Click on it to see the example in action.
 #### DRYResourceReader 
 **Example usage:** `ExampleDRYResourceReaderV`iewController.m
 
-A `DRYResourceReader` exposes an operation to read a property from the resource based on a specified key.
+A `DRYResourceReader` exposes an operation to read a property from a resource based on a specified key.
 First of all you need to create a `DRYResourceReader`.
 DRYUtilities contains a `DRYPlistResourceReader` which can read .plist files. It also offers the ability to supply a fallback resource. 
 This fallback resource will be used if the property can't be resolved using the original resource file.
@@ -50,7 +50,7 @@ From now on you can target the properties from your resource file:
 ```objective-c
 id<DRYResourceReader> reader = ...;
 ExampleDynamicPropertyProvider *propertyProvider = [[ExampleDynamicPropertyProvider alloc] initWithResourceReader:reader];
-propertyProvider.firstProperty;
+NSLog(@"Property value: %@", propertyProvider.firstProperty);
 ```
 
 ## Requirements
