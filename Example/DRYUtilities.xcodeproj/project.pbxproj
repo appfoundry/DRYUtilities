@@ -3,6 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,19 +26,27 @@
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* DRYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* DRYAppDelegate.m */; };
 		6003F5A1195388D20070C39A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6003F59F195388D20070C39A /* Main.storyboard */; };
-		6003F5A7195388D20070C39A /* DRYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* DRYViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		734394968D041F17C4ABAFB3 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4658F80F41F57A5BA5CABF62 /* libPods-Tests.a */; };
+		AE03D1037B3EA5112716D8D3 /* ExampleDRYLoadFromNibController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE03D0913BF476E910CF1370 /* ExampleDRYLoadFromNibController.m */; };
 		AE03D157CCD1E8A0733EA34F /* ExampleDynamicPropertyProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = AE03D78BA75FC8DD9BE004BE /* ExampleDynamicPropertyProvider.m */; };
 		AE03D16E8FB0ADDEE230F4A5 /* ExampleConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE03D52CB4BB13E09EC2832B /* ExampleConfigurationViewController.m */; };
+		AE03D54D4D3AD0DF8702E124 /* UIColor+AFColor.m in Sources */ = {isa = PBXBuildFile; fileRef = AE03DE94D8DE2EC6DDB830ED /* UIColor+AFColor.m */; };
+		AE03D598210E1D0A412434E4 /* UIImage+AFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = AE03DDB2FDAD73B120CD9427 /* UIImage+AFImage.m */; };
 		AE03D7903CDAF32AA5F83B07 /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE03D1A7383263FE15E428AD /* Configuration.plist */; };
+		AE03D7F457915975FFC24891 /* ExampleDRYNSStringHexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE03D4043595E5EE6C6A0B21 /* ExampleDRYNSStringHexViewController.m */; };
 		AE03DD18A50D2F4BD623631A /* DefaultConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE03DC53530E181FD71CEE93 /* DefaultConfiguration.plist */; };
+		AE03DDCC345AD86C1AD2F8B2 /* DRYTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = AE03D45F7E2EBC456702024F /* DRYTheme.m */; };
 		E56459F61B454B6B004DCF97 /* NSString+DRYUtilTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E56459F51B454B6B004DCF97 /* NSString+DRYUtilTest.m */; };
+		EBC02BBA1C06F436007C3EAB /* UIColor+DRYHex.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC02BB91C06F436007C3EAB /* UIColor+DRYHex.m */; };
 		EBD027CA1C046F91005E46D5 /* ExampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD027C91C046F91005E46D5 /* ExampleTableViewController.m */; };
+		EBD027CD1C05A27C005E46D5 /* ExampleDRYNSNullSupportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD027CC1C05A27C005E46D5 /* ExampleDRYNSNullSupportViewController.m */; };
+		EBD027D01C05B3E7005E46D5 /* AFNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD027CF1C05B3E7005E46D5 /* AFNavigationViewController.m */; };
+		EBD027D21C05B4E3005E46D5 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBD027D11C05B4E3005E46D5 /* Media.xcassets */; };
 		EBD027D51C05C74B005E46D5 /* ExampleDRYNSStringTemplateReplacementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD027D41C05C74B005E46D5 /* ExampleDRYNSStringTemplateReplacementViewController.m */; };
 		EBD027DA1C060192005E46D5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBD027D91C060192005E46D5 /* LaunchScreen.xib */; };
 /* End PBXBuildFile section */
@@ -79,29 +88,45 @@
 		6003F59C195388D20070C39A /* DRYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DRYAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* DRYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DRYAppDelegate.m; sourceTree = "<group>"; };
 		6003F5A0195388D20070C39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* DRYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DRYViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* DRYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DRYViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		AE03D0913BF476E910CF1370 /* ExampleDRYLoadFromNibController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleDRYLoadFromNibController.m; sourceTree = "<group>"; };
+		AE03D10C1D283D2DA2CC0267 /* UIColor+AFColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+AFColor.h"; sourceTree = "<group>"; };
 		AE03D1A7383263FE15E428AD /* Configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Configuration.plist; sourceTree = "<group>"; };
+		AE03D4043595E5EE6C6A0B21 /* ExampleDRYNSStringHexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleDRYNSStringHexViewController.m; sourceTree = "<group>"; };
+		AE03D45F7E2EBC456702024F /* DRYTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRYTheme.m; sourceTree = "<group>"; };
+		AE03D4A463D3C02804DF5200 /* ExampleDRYNSStringHexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleDRYNSStringHexViewController.h; sourceTree = "<group>"; };
 		AE03D52CB4BB13E09EC2832B /* ExampleConfigurationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleConfigurationViewController.m; sourceTree = "<group>"; };
+		AE03D60008F08A99552CDAD1 /* DRYTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRYTheme.h; sourceTree = "<group>"; };
 		AE03D772B5E204F800C27F56 /* ExampleDynamicPropertyProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleDynamicPropertyProvider.h; sourceTree = "<group>"; };
 		AE03D78BA75FC8DD9BE004BE /* ExampleDynamicPropertyProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleDynamicPropertyProvider.m; sourceTree = "<group>"; };
 		AE03D9A9FD51EEFECDCFD367 /* ExampleConfigurationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleConfigurationViewController.h; sourceTree = "<group>"; };
 		AE03DC53530E181FD71CEE93 /* DefaultConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = DefaultConfiguration.plist; sourceTree = "<group>"; };
+		AE03DD0D68A6239CBFCAC102 /* UIImage+AFImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AFImage.h"; sourceTree = "<group>"; };
+		AE03DDB2FDAD73B120CD9427 /* UIImage+AFImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AFImage.m"; sourceTree = "<group>"; };
+		AE03DE94D8DE2EC6DDB830ED /* UIColor+AFColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AFColor.m"; sourceTree = "<group>"; };
+		AE03DFB77CC1A47F47BEBC6C /* ExampleDRYLoadFromNibController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleDRYLoadFromNibController.h; sourceTree = "<group>"; };
 		B0D0FA173411C76F6B1EB97D /* Pods-DRYUtilities.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DRYUtilities.release.xcconfig"; path = "Pods/Target Support Files/Pods-DRYUtilities/Pods-DRYUtilities.release.xcconfig"; sourceTree = "<group>"; };
 		B4A8735989C3368DF6C69D42 /* DRYUtilities.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DRYUtilities.podspec; path = ../DRYUtilities.podspec; sourceTree = "<group>"; };
 		C491B585278DD8C64C95C841 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DB5C04727DEB240CC61B4F8C /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E56459F51B454B6B004DCF97 /* NSString+DRYUtilTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DRYUtilTest.m"; sourceTree = "<group>"; };
 		E6243E93EB4140649D8A1857 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		EBC02BB91C06F436007C3EAB /* UIColor+DRYHex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DRYHex.m"; sourceTree = "<group>"; };
 		EBD027C81C046F91005E46D5 /* ExampleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleTableViewController.h; sourceTree = "<group>"; };
 		EBD027C91C046F91005E46D5 /* ExampleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleTableViewController.m; sourceTree = "<group>"; };
+		EBD027CB1C05A27C005E46D5 /* ExampleDRYNSNullSupportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleDRYNSNullSupportViewController.h; sourceTree = "<group>"; };
+		EBD027CC1C05A27C005E46D5 /* ExampleDRYNSNullSupportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleDRYNSNullSupportViewController.m; sourceTree = "<group>"; };
+		EBD027CE1C05B3E7005E46D5 /* AFNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNavigationViewController.h; sourceTree = "<group>"; };
+		EBD027CF1C05B3E7005E46D5 /* AFNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNavigationViewController.m; sourceTree = "<group>"; };
+		EBD027D11C05B4E3005E46D5 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		EBD027D31C05C74B005E46D5 /* ExampleDRYNSStringTemplateReplacementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleDRYNSStringTemplateReplacementViewController.h; sourceTree = "<group>"; };
 		EBD027D41C05C74B005E46D5 /* ExampleDRYNSStringTemplateReplacementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleDRYNSStringTemplateReplacementViewController.m; sourceTree = "<group>"; };
+		EBD027D91C060192005E46D5 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		FA13A83D0CA0B6AA5464FC3E /* libPods-DRYUtilities.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DRYUtilities.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -226,8 +251,6 @@
 				6003F59C195388D20070C39A /* DRYAppDelegate.h */,
 				6003F59D195388D20070C39A /* DRYAppDelegate.m */,
 				6003F59F195388D20070C39A /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* DRYViewController.h */,
-				6003F5A6195388D20070C39A /* DRYViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 				27F242A61A8B51E90079F8EC /* SimpleView.xib */,
@@ -235,6 +258,12 @@
 				EBD027C81C046F91005E46D5 /* ExampleTableViewController.h */,
 				EBD027C91C046F91005E46D5 /* ExampleTableViewController.m */,
 				AE03DAB5614C38CA792A8A78 /* Configuration */,
+				AE03D77CB89DE8DCB09A1707 /* Foundation */,
+				AE03D38A82798772815C52A9 /* Theme */,
+				EBD027CE1C05B3E7005E46D5 /* AFNavigationViewController.h */,
+				EBD027CF1C05B3E7005E46D5 /* AFNavigationViewController.m */,
+				AE03DC83EBFEF56A722D4EFA /* UIKit */,
+				EBD027D91C060192005E46D5 /* LaunchScreen.xib */,
 			);
 			path = DRYUtilities;
 			sourceTree = "<group>";
@@ -260,6 +289,7 @@
 				6003F5B6195388D20070C39A /* Supporting Files */,
 				27F2428D1A8A52290079F8EC /* DRYUtilitiesTests.h */,
 				3323F5681AC6914763671331 /* Foundation */,
+				AE03D5D650465E4826CBC29A /* UIKit */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -295,6 +325,41 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AE03D38A82798772815C52A9 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				AE03D45F7E2EBC456702024F /* DRYTheme.m */,
+				AE03D60008F08A99552CDAD1 /* DRYTheme.h */,
+				AE03DE94D8DE2EC6DDB830ED /* UIColor+AFColor.m */,
+				AE03D10C1D283D2DA2CC0267 /* UIColor+AFColor.h */,
+				AE03DDB2FDAD73B120CD9427 /* UIImage+AFImage.m */,
+				AE03DD0D68A6239CBFCAC102 /* UIImage+AFImage.h */,
+				EBD027D11C05B4E3005E46D5 /* Media.xcassets */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		AE03D5D650465E4826CBC29A /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				EBC02BB91C06F436007C3EAB /* UIColor+DRYHex.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		AE03D77CB89DE8DCB09A1707 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				EBD027CB1C05A27C005E46D5 /* ExampleDRYNSNullSupportViewController.h */,
+				EBD027CC1C05A27C005E46D5 /* ExampleDRYNSNullSupportViewController.m */,
+				EBD027D31C05C74B005E46D5 /* ExampleDRYNSStringTemplateReplacementViewController.h */,
+				EBD027D41C05C74B005E46D5 /* ExampleDRYNSStringTemplateReplacementViewController.m */,
+				AE03D4043595E5EE6C6A0B21 /* ExampleDRYNSStringHexViewController.m */,
+				AE03D4A463D3C02804DF5200 /* ExampleDRYNSStringHexViewController.h */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
 		AE03DAB5614C38CA792A8A78 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
@@ -304,6 +369,15 @@
 				AE03D772B5E204F800C27F56 /* ExampleDynamicPropertyProvider.h */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		AE03DC83EBFEF56A722D4EFA /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				AE03D0913BF476E910CF1370 /* ExampleDRYLoadFromNibController.m */,
+				AE03DFB77CC1A47F47BEBC6C /* ExampleDRYLoadFromNibController.h */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,6 +443,7 @@
 				};
 			};
 			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "DRYUtilities" */;
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -393,10 +468,12 @@
 			files = (
 				27F242A91A8B5F110079F8EC /* SimpleViewWithOwner.xib in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				EBD027D21C05B4E3005E46D5 /* Media.xcassets in Resources */,
 				6003F5A1195388D20070C39A /* Main.storyboard in Resources */,
 				27F242A71A8B51E90079F8EC /* SimpleView.xib in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 				AE03D7903CDAF32AA5F83B07 /* Configuration.plist in Resources */,
+				EBD027DA1C060192005E46D5 /* LaunchScreen.xib in Resources */,
 				AE03DD18A50D2F4BD623631A /* DefaultConfiguration.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,11 +589,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* DRYAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* DRYViewController.m in Sources */,
 				EBD027CA1C046F91005E46D5 /* ExampleTableViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				AE03D16E8FB0ADDEE230F4A5 /* ExampleConfigurationViewController.m in Sources */,
+				EBD027D01C05B3E7005E46D5 /* AFNavigationViewController.m in Sources */,
+				EBD027CD1C05A27C005E46D5 /* ExampleDRYNSNullSupportViewController.m in Sources */,
 				AE03D157CCD1E8A0733EA34F /* ExampleDynamicPropertyProvider.m in Sources */,
+				AE03DDCC345AD86C1AD2F8B2 /* DRYTheme.m in Sources */,
+				EBD027D51C05C74B005E46D5 /* ExampleDRYNSStringTemplateReplacementViewController.m in Sources */,
+				AE03D54D4D3AD0DF8702E124 /* UIColor+AFColor.m in Sources */,
+				AE03D598210E1D0A412434E4 /* UIImage+AFImage.m in Sources */,
+				AE03D1037B3EA5112716D8D3 /* ExampleDRYLoadFromNibController.m in Sources */,
+				AE03D7F457915975FFC24891 /* ExampleDRYNSStringHexViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +608,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBC02BBA1C06F436007C3EAB /* UIColor+DRYHex.m in Sources */,
 				27F242871A8A4C0B0079F8EC /* DRYBaseDynamicPropertyProviderTest.m in Sources */,
 				E56459F61B454B6B004DCF97 /* NSString+DRYUtilTest.m in Sources */,
 				27F2428C1A8A51F70079F8EC /* DRYPlistResourceReaderTest.m in Sources */,
@@ -658,6 +743,7 @@
 				INFOPLIST_FILE = "DRYUtilities/DRYUtilities-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "be.appfoundry.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -674,6 +760,7 @@
 				INFOPLIST_FILE = "DRYUtilities/DRYUtilities-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "be.appfoundry.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
