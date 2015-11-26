@@ -124,6 +124,13 @@ NSLog(@"Result: %d", [[NSNull null] dryIsNSNull]); //Result: 1
 
 ### UIKit utilities
 #### UIColor DRYUtil
+
+`dryColorFromRGBHexString:` provides the ability the create UIColor objects based on a RGB hex representation of a color.
+
+```objective-c
+UIColor *redColor = [UIColor dryColorFromRGBHexString:@"#FF0000"];
+```
+
 #### UIImage ColorPixel
 #### UIView DRYLoadFromNib
 

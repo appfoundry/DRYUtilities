@@ -39,6 +39,7 @@
 		AE03D598210E1D0A412434E4 /* UIImage+AFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = AE03DDB2FDAD73B120CD9427 /* UIImage+AFImage.m */; };
 		AE03D7903CDAF32AA5F83B07 /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE03D1A7383263FE15E428AD /* Configuration.plist */; };
 		AE03D7F457915975FFC24891 /* ExampleDRYNSStringHexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE03D4043595E5EE6C6A0B21 /* ExampleDRYNSStringHexViewController.m */; };
+		AE03D9838E074E9086376C08 /* ExampleDRYUIColorDRYUtilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE03D05BABA866D48FAE9BF7 /* ExampleDRYUIColorDRYUtilViewController.m */; };
 		AE03DD18A50D2F4BD623631A /* DefaultConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE03DC53530E181FD71CEE93 /* DefaultConfiguration.plist */; };
 		AE03DDCC345AD86C1AD2F8B2 /* DRYTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = AE03D45F7E2EBC456702024F /* DRYTheme.m */; };
 		E56459F61B454B6B004DCF97 /* NSString+DRYUtilTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E56459F51B454B6B004DCF97 /* NSString+DRYUtilTest.m */; };
@@ -94,6 +95,7 @@
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		AE03D05BABA866D48FAE9BF7 /* ExampleDRYUIColorDRYUtilViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleDRYUIColorDRYUtilViewController.m; sourceTree = "<group>"; };
 		AE03D0913BF476E910CF1370 /* ExampleDRYLoadFromNibController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleDRYLoadFromNibController.m; sourceTree = "<group>"; };
 		AE03D10C1D283D2DA2CC0267 /* UIColor+AFColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+AFColor.h"; sourceTree = "<group>"; };
 		AE03D1A7383263FE15E428AD /* Configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Configuration.plist; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 		AE03D78BA75FC8DD9BE004BE /* ExampleDynamicPropertyProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleDynamicPropertyProvider.m; sourceTree = "<group>"; };
 		AE03D9A9FD51EEFECDCFD367 /* ExampleConfigurationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleConfigurationViewController.h; sourceTree = "<group>"; };
 		AE03DC53530E181FD71CEE93 /* DefaultConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = DefaultConfiguration.plist; sourceTree = "<group>"; };
+		AE03DC87C9FB9C3EE826D93A /* ExampleDRYUIColorDRYUtilViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleDRYUIColorDRYUtilViewController.h; sourceTree = "<group>"; };
 		AE03DD0D68A6239CBFCAC102 /* UIImage+AFImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AFImage.h"; sourceTree = "<group>"; };
 		AE03DDB2FDAD73B120CD9427 /* UIImage+AFImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AFImage.m"; sourceTree = "<group>"; };
 		AE03DE94D8DE2EC6DDB830ED /* UIColor+AFColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AFColor.m"; sourceTree = "<group>"; };
@@ -376,6 +379,8 @@
 			children = (
 				AE03D0913BF476E910CF1370 /* ExampleDRYLoadFromNibController.m */,
 				AE03DFB77CC1A47F47BEBC6C /* ExampleDRYLoadFromNibController.h */,
+				AE03D05BABA866D48FAE9BF7 /* ExampleDRYUIColorDRYUtilViewController.m */,
+				AE03DC87C9FB9C3EE826D93A /* ExampleDRYUIColorDRYUtilViewController.h */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -601,6 +606,7 @@
 				AE03D598210E1D0A412434E4 /* UIImage+AFImage.m in Sources */,
 				AE03D1037B3EA5112716D8D3 /* ExampleDRYLoadFromNibController.m in Sources */,
 				AE03D7F457915975FFC24891 /* ExampleDRYNSStringHexViewController.m in Sources */,
+				AE03D9838E074E9086376C08 /* ExampleDRYUIColorDRYUtilViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

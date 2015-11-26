@@ -67,11 +67,95 @@
                         <segue destination="WYw-kA-nR6" kind="push" identifier="goToDRYNSNullSupport" id="tx1-na-fYT"/>
                         <segue destination="bwS-YS-1e5" kind="push" identifier="goToDRYTemplateReplacement" id="HK9-wA-YBS"/>
                         <segue destination="eqU-uM-LJJ" kind="push" identifier="goToDRYHex" id="WaQ-9M-rwn"/>
+                        <segue destination="5CG-Hd-Z1v" kind="push" identifier="goToUIColorDRYUtil" id="ceI-cn-dRm"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Crf-hi-8aS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-130" y="477"/>
+        </scene>
+        <!--UIColor DRYUtil-->
+        <scene sceneID="uwd-nX-zS9">
+            <objects>
+                <viewController id="5CG-Hd-Z1v" customClass="ExampleDRYUIColorDRYUtilViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vGy-Fa-BRT"/>
+                        <viewControllerLayoutGuide type="bottom" id="YJM-lB-ees"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b4Y-md-DBd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uwa-wn-X6u">
+                                <rect key="frame" x="-4" y="64" width="328" height="56.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creating colors based on a RGB hex string is easy using DRYUtil." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWQ-dV-vQQ">
+                                        <rect key="frame" x="16" y="8" width="296" height="41"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ZWQ-dV-vQQ" secondAttribute="bottom" constant="8" id="4iZ-h0-oji"/>
+                                    <constraint firstItem="ZWQ-dV-vQQ" firstAttribute="leading" secondItem="Uwa-wn-X6u" secondAttribute="leading" constant="16" id="rK7-db-sLm"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZWQ-dV-vQQ" secondAttribute="trailing" constant="16" id="xFf-Ek-Clp"/>
+                                    <constraint firstItem="ZWQ-dV-vQQ" firstAttribute="top" secondItem="Uwa-wn-X6u" secondAttribute="top" constant="8" id="xfW-49-uan"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PJD-Er-atN">
+                                <rect key="frame" x="16" y="136" width="288" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERR-y8-ES9">
+                                <rect key="frame" x="16" y="174" width="288" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.33333333329999998" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Create color from RGB hex">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="colorize:" destination="5CG-Hd-Z1v" eventType="touchUpInside" id="UEM-Cl-nT4"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ug4-X3-Qkj">
+                                <rect key="frame" x="16" y="236.5" width="288" height="299.5"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.12941176469999999" green="0.64313725489999995" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ERR-y8-ES9" firstAttribute="centerX" secondItem="PJD-Er-atN" secondAttribute="centerX" id="2DX-vY-Ok8"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="PJD-Er-atN" secondAttribute="leading" id="FpQ-A2-hez"/>
+                            <constraint firstItem="PJD-Er-atN" firstAttribute="top" secondItem="Uwa-wn-X6u" secondAttribute="bottom" constant="16" id="MvP-LU-ckw"/>
+                            <constraint firstItem="Uwa-wn-X6u" firstAttribute="top" secondItem="vGy-Fa-BRT" secondAttribute="bottom" id="OT7-Y8-c6e"/>
+                            <constraint firstItem="Uwa-wn-X6u" firstAttribute="leading" secondItem="b4Y-md-DBd" secondAttribute="leadingMargin" constant="-20" id="QwI-AQ-a9B"/>
+                            <constraint firstItem="YJM-lB-ees" firstAttribute="top" secondItem="ug4-X3-Qkj" secondAttribute="bottom" constant="32" id="WwZ-EQ-ZXZ"/>
+                            <constraint firstItem="ug4-X3-Qkj" firstAttribute="centerX" secondItem="ERR-y8-ES9" secondAttribute="centerX" id="btf-x7-B4R"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Uwa-wn-X6u" secondAttribute="trailing" constant="-20" id="duo-oC-wzb"/>
+                            <constraint firstItem="ug4-X3-Qkj" firstAttribute="top" secondItem="ERR-y8-ES9" secondAttribute="bottom" constant="32" id="i8u-qV-i7B"/>
+                            <constraint firstItem="ERR-y8-ES9" firstAttribute="top" secondItem="PJD-Er-atN" secondAttribute="bottom" constant="8" id="ii3-Qn-tGU"/>
+                            <constraint firstItem="ug4-X3-Qkj" firstAttribute="width" secondItem="ERR-y8-ES9" secondAttribute="width" id="lZd-f9-Cff"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PJD-Er-atN" secondAttribute="trailing" id="s06-dH-Bmu"/>
+                            <constraint firstItem="ERR-y8-ES9" firstAttribute="width" secondItem="PJD-Er-atN" secondAttribute="width" id="vEh-lS-2mH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="UIColor DRYUtil" id="qY1-7c-rEu"/>
+                    <connections>
+                        <outlet property="coloredView" destination="ug4-X3-Qkj" id="KJO-bY-6RI"/>
+                        <outlet property="hexTextField" destination="PJD-Er-atN" id="z2B-Op-IJW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gZL-UW-LOX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-130" y="1146"/>
         </scene>
         <!--NSObject/NSNull DRYNSNullSupport-->
         <scene sceneID="Veg-5c-Nya">
@@ -106,7 +190,7 @@
                                     <constraint firstAttribute="trailing" secondItem="e01-mE-2QP" secondAttribute="trailing" constant="16" id="UAx-M1-Kez"/>
                                 </constraints>
                             </view>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Unn-7g-Pna" userLabel="JSON Textfield">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="#113399" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Unn-7g-Pna" userLabel="JSON Textfield">
                                 <rect key="frame" x="16" y="189.5" width="296" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>

@@ -48,7 +48,8 @@
             },
             @{@"name" : @"UIKit",
                     @"utilities" : @[
-                    @{@"label" : @"UIKit: UIView DRYLoadFromNib", @"segue" : @"goToDRYNib"}]
+                    @{@"label" : @"UIKit: UIView DRYLoadFromNib", @"segue" : @"goToDRYNib"},
+                    @{@"label" : @"UIKit: UIColor DRYUtil", @"segue" : @"goToUIColorDRYUtil"}]
             },
             @{@"name" : @"Configuration",
                     @"utilities" : @[
