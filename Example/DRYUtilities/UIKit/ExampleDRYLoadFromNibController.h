@@ -1,5 +1,5 @@
 //
-//  DRYViewController.h
+//  ExampleDRYLoadFromNibController.h
 //  DRYUtilities
 //
 //  Created by Michael Seghers on 02/10/2015.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DRYViewController : UIViewController
+@interface ExampleDRYLoadFromNibController : UIViewController
 
 @end

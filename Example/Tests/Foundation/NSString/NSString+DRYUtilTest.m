@@ -16,7 +16,6 @@
 @implementation NSString_DRYUtilTest
 
 - (void)testNonBlankStringIsNotBlank {
-    NSLog(@"Is not blank: %d", [@"test" dryIsNotBlank]);
     assertThatBool([@"test" dryIsNotBlank], isTrue());
 }
 

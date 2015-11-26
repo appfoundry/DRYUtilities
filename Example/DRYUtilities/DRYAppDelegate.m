@@ -7,11 +7,14 @@
 //
 
 #import "DRYAppDelegate.h"
+#import "DRYTheme.h"
+#import "UIColor+AFColor.h"
 
 @implementation DRYAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [[DRYTheme alloc] init];
     // Override point for customization after application launch.
     return YES;
 }

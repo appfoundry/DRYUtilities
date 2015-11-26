@@ -3,7 +3,6 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -39,6 +38,8 @@
 		AE03DD18A50D2F4BD623631A /* DefaultConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE03DC53530E181FD71CEE93 /* DefaultConfiguration.plist */; };
 		E56459F61B454B6B004DCF97 /* NSString+DRYUtilTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E56459F51B454B6B004DCF97 /* NSString+DRYUtilTest.m */; };
 		EBD027CA1C046F91005E46D5 /* ExampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD027C91C046F91005E46D5 /* ExampleTableViewController.m */; };
+		EBD027D51C05C74B005E46D5 /* ExampleDRYNSStringTemplateReplacementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD027D41C05C74B005E46D5 /* ExampleDRYNSStringTemplateReplacementViewController.m */; };
+		EBD027DA1C060192005E46D5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBD027D91C060192005E46D5 /* LaunchScreen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		E6243E93EB4140649D8A1857 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		EBD027C81C046F91005E46D5 /* ExampleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleTableViewController.h; sourceTree = "<group>"; };
 		EBD027C91C046F91005E46D5 /* ExampleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleTableViewController.m; sourceTree = "<group>"; };
+		EBD027D41C05C74B005E46D5 /* ExampleDRYNSStringTemplateReplacementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleDRYNSStringTemplateReplacementViewController.m; sourceTree = "<group>"; };
 		FA13A83D0CA0B6AA5464FC3E /* libPods-DRYUtilities.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DRYUtilities.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -367,7 +369,6 @@
 				};
 			};
 			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "DRYUtilities" */;
-			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (

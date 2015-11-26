@@ -53,6 +53,7 @@ Extend the `DRYBaseDynamicPropertyProvider` with properties matching the keys us
 ```
 
 From now on you can target the properties from your resource file:
+
 ```objective-c
 id<DRYResourceReader> reader = ...;
 ExampleDynamicPropertyProvider *propertyProvider = [[ExampleDynamicPropertyProvider alloc] initWithResourceReader:reader];
@@ -63,7 +64,8 @@ NSLog(@"Property value: %@", propertyProvider.firstProperty);
 Foundation utilities provides utility methods on different Foundation classes.
 
 #### NSString DRYHex
-`dryStringFromHexWithData:` will return a hexdecimal string representing an NSData object.
+`dryStringFromHexWithData:` will return a hexadecimal string representing a NSData object.
+
 ```objective-c
 char bytes[3] = {0, 1, 2};
 NSData *data = [NSData dataWithBytes:bytes length:3];
@@ -73,8 +75,7 @@ NSLog(@"Hex string: %@", hexString); //Hex string: 000102
 ```
 
 #### NSString DRYTemplateReplacement
-`dryStringByReplacingTemplatesWithValuesFromDictionary:` can be used to replace placeholders in a string. It will return a new string containing result after replacing the placeholders.
-It also offers a way to define the template notation by yourself.
+`dryStringByReplacingTemplatesWithValuesFromDictionary:` can be used to replace placeholders in a string. It will return a new string containing the result after replacing the placeholders.
 
 ```objective-c
 NSString *text = @"Hello {name}, you live in {country}";
@@ -104,8 +105,8 @@ NSLog(@"Is not blank: %d", [nil dryIsNotBlank]); //Is not blank: 0
 NSLog(@"Is not blank: %d", [@"\t\n" dryIsNotBlank]); //Is not blank: 0
 ```
 
-#### NSObject DRYNSNullSupport
-`dryValueOrNil` can be used to convert an `[NSNull null]` value to `nil`. This can be useful for example when storing a NSDictionary with NSNull value to a Core Data object.
+#### NSObject/NSNull DRYNSNullSupport
+`dryValueOrNil` can be used to convert an `[NSNull null]` value to `nil`. This can be useful for example when storing a NSDictionary with NSNull values to a Core Data object.
 
 ```objective-c
 NSString *string = [[NSNull null] dryValueOrNil]; // string = nil
@@ -119,6 +120,16 @@ NSLog(@"Result: %d", [@"" dryIsNSNull]); //Result: 0
 NSLog(@"Result: %d", [[NSNull null] dryIsNSNull]); //Result: 1
 ```
 
+`[NSNull dryNullOrValue]` can be used 
+
+### UIKit utilities
+#### UIColor DRYUtil
+#### UIImage ColorPixel
+#### UIView DRYLoadFromNib
+
+### Security utilities
+### CoreData utilities
+### Networking utilities
 
 ## Requirements
 
