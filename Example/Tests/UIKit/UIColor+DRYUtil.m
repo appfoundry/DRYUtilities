@@ -25,4 +25,15 @@
     assertThatDouble(CGColorGetAlpha(color.CGColor), is(equalTo(@(1))));
 }
 
+- (void)testColorWithRGBValues {
+    UIColor *color = [UIColor dryColorWithR:255 G:0 B:255 A:1.0];
+    
+    const CGFloat *components = CGColorGetComponents(color.CGColor);
+    assertThatDouble(components[0], is(equalTo(@(1))));
+    assertThatDouble(components[1], is(equalTo(@(0))));
+    assertThatDouble(components[2], is(equalTo(@(1))));
+    assertThatDouble(CGColorGetAlpha(color.CGColor), is(equalTo(@(1))));
+
+}
+
 @end
