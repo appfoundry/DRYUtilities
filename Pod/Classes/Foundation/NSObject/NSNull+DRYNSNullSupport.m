@@ -15,9 +15,12 @@
     return nil;
 }
 
+- (id)dryValueOrDefault:(id)defaultValue {
+	return defaultValue;
+}
+
 + (id)dryNullOrValue:(id)value {
     return value ? :[NSNull null];
 }
-
 
 @end

@@ -15,4 +15,8 @@
     return self;
 }
 
+- (id)dryValueOrDefault:(id)defaultValue {
+	return self;
+}
+
 @end

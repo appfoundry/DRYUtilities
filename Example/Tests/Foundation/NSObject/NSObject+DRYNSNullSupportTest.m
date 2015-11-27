@@ -31,6 +31,14 @@
     assertThat([[NSNull null] dryValueOrNil], is(nilValue()));
 }
 
+- (void)testValueOrDefaultReturnsObjectForObjects {
+	NSString *originalValue = @"originalValue";
+	assertThat([originalValue dryValueOrDefault:@"defaultValue"], is(sameInstance(originalValue)));
+}
 
+- (void)testValueOrDefaultReturnsDefaultNSNull {
+	NSString *defaultValue = @"defaultValue";
+	assertThat([[NSNull null] dryValueOrDefault:defaultValue], is(sameInstance(defaultValue)));
+}
 
 @end

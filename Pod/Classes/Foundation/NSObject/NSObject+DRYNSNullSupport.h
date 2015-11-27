@@ -14,5 +14,9 @@ Returns NO if the receiver is nil or not NSNull.
 Returns the receiver if the receiver is not NSNull. If the receiver is NSNull, nil is returned.
 */
 @property(nonatomic, readonly) id dryValueOrNil;
+/**
+Returns the receiver if the receiver is not NSNull. If the receiver is NSNull, the default value is returned.
+*/
+- (id)dryValueOrDefault:(id)defaultValue;
 
 @end
