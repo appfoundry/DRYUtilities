@@ -5,14 +5,14 @@
 [![License](https://img.shields.io/cocoapods/l/DRYUtilities.svg?style=flat)](http://cocoadocs.org/docsets/DRYUtilities)
 [![Platform](https://img.shields.io/cocoapods/p/DRYUtilities.svg?style=flat)](http://cocoadocs.org/docsets/DRYUtilities)
 
-DRYUtilies is designed to offer some common functionality used in iOS development.
+DRYUtilities is designed to offer some common functionality used in iOS development.
 It allows you to quickly get up and running without needing to write the same functionality over and over again on different projects.
 Using DRYUtilities will make your code even more DRY than it already is.
 
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
-This project contains example usages for all the utilities provided in DRYUtilities.
+This project contains example usages for most of the utilities provided in DRYUtilities.
 
 Once you've started the app, you'll see a table containing a row for each example.
 Click on it to see the example in action and read about it below.
@@ -20,7 +20,7 @@ Click on it to see the example in action and read about it below.
 ### Configuration utilities
 These utilities provide the functionality to easily gain access to properties read from different types of resource files.
 
-**Example usage:** `ExampleConfigurationViewController.m`
+[Example usage: `ExampleConfigurationViewController`](Example/DRYUtilities/Configuration/ExampleConfigurationViewController.m)
 
 #### DRYResourceReader 
 A `DRYResourceReader` exposes an operation to read a property from a resource based on a specified key.
@@ -87,10 +87,9 @@ NSString *resolvedText = [text dryStringByReplacingTemplatesWithValuesFromDictio
 
 In order to use a different template notation you can use the following:
 ```objective-c
-NSString *text = @"Hello __name%, you live in __country%";
+NSString *text = @"Hello __name//, you live in __country//";
 NSDictionary *values = @{@"name" : @"Jos", @"country": @"Belgium"};
-NSString *resolvedText = [text dryStringByReplacingTemplatesWithValuesFromDictionary:values withTemplatePrefix:@"__" templateSuffix:@"%"];
-
+NSString *resolvedText = [text dryStringByReplacingTemplatesWithValuesFromDictionary:values withTemplatePrefix:@"__" templateSuffix:@"//"];
 NSLog(@"Resolved text: %@", resolvedText); //Resolved text: Hello Jos, you live in Belgium
 ```
 
@@ -120,7 +119,7 @@ NSLog(@"Result: %d", [@"" dryIsNSNull]); //Result: 0
 NSLog(@"Result: %d", [[NSNull null] dryIsNSNull]); //Result: 1
 ```
 
-`[NSNull dryNullOrValue]` can be used 
+`[NSNull dryNullOrValue:]` can be used to get the value or `[NSNull null]` if the value is `nil`.
 
 ### UIKit utilities
 #### UIColor DRYUtil
@@ -150,6 +149,9 @@ it, simply add the following line to your Podfile:
 ## Author
 
 Mike Seghers, mike@appfoundry.be
+Joris Dubois, joris.dubois@appfoundry.be
+Willem Van Pelt, willem.vanpelt@me.com
+
 
 ## License
 
