@@ -16,7 +16,6 @@
 
 @implementation UIImage_ColorPixelTest
 
-
 - (void)testDryImageWithColorPerformance {
     [self measureBlock:^{
         [UIImage dryImageWithColor:[UIColor redColor] size:CGSizeMake(10, 10)];
