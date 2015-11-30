@@ -158,9 +158,31 @@ UIImage *redImage = [UIImage dryImageWithColor:[UIColor redColor] size:CGSizeMak
 
 [Example usage: `ExampleDRYLoadFromNibController`](Example/DRYUtilities/UIKit/ExampleDRYLoadFromNibController.m)
 
+```objective-c
++ (instancetype)dryViewWithNibName:(NSString *)nibName bundle:(NSBundle *)nibBundleOrNil owner:(id)owner tag:(NSInteger)tag;
+```
+The method above is the most elaborate method provided. It can be used to create a UIView instance based on a .xib file.
+The `nibName`is used to indicate which .xib file should be used. The .xib file can be located in another bundle, this can be set by the `nibBundleOrNil`argument. The `tag` argument indicates which view should be loaded based on the value of `tag`. If it is not provided it wille just return the first view in the .xib file which has the instancetype as class.
+
 ### Security utilities
+
+`DRYSecurityCredentials` represent a username and password pair that can be saved in secure storage through the DRYSecurityStoreWrapper. Instances of this class should not be kept in memory longer then absolutely necessary!
+```objective-c
+DRYSecurityCredentials *securityCredentials = [[DRYSecurityCredentials alloc] initWithUserName:@"superAwesomeUsername" andPassword:@"superSecurePassword"];
+```
+
+`DRYSecurityStoreWrapper' is a wrapper class providing access to a username/password pair identified with an `identifer`.
+It allows you to store this username/password pair using the `Security` library provided by iOS.
+
+```objective-c
+DRYSecurityStoreWrapper *securityStoreWrapper = [[DRYSecurityStoreWrapper alloc] initWithIdentifier:@"remotingCredentials"];
+[securityStoreWrapper persistWithCredentials:securityCredentials];
+```
+
 ### CoreData utilities
-### Networking utilities
+'DRYCoreDataTableViewController' provides a tableview controller backed by a `NSFetchedResultsController`. The controller will update its tableview when data changes.
+
+Create an instance of 'DRYCoreDataTableViewController' and add a `NSFetchedResultsController` to get started. You can also tell the controller whether to use section indexes or not. This can done by setting the correct value for `needsSectionIndex`. If it is set to YES, the `sectionIndexTitles`of the `NSFetchedResultsController` is used to display the section titles.
 
 ## Requirements
 

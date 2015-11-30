@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 /**
- Security credentials represent a username and password pair that can be saved in secure storage through the DRYSecurityStoreWrapper. Instances of this class should not be kept in memory longer then absolutly necessary!
+ Security credentials represent a username and password pair that can be saved in secure storage through the DRYSecurityStoreWrapper. Instances of this class should not be kept in memory longer then absolutely necessary!
  */
 @interface DRYSecurityCredentials : NSObject
 
