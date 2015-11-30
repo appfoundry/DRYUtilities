@@ -171,7 +171,7 @@ The `nibName`is used to indicate which .xib file should be used. The .xib file c
 DRYSecurityCredentials *securityCredentials = [[DRYSecurityCredentials alloc] initWithUserName:@"superAwesomeUsername" andPassword:@"superSecurePassword"];
 ```
 
-`DRYSecurityStoreWrapper' is a wrapper class providing access to a username/password pair identified with an `identifer`.
+`DRYSecurityStoreWrapper` is a wrapper class providing access to a username/password pair identified with an `identifer`.
 It allows you to store this username/password pair using the `Security` library provided by iOS.
 
 ```objective-c
@@ -180,9 +180,9 @@ DRYSecurityStoreWrapper *securityStoreWrapper = [[DRYSecurityStoreWrapper alloc]
 ```
 
 ### CoreData utilities
-'DRYCoreDataTableViewController' provides a tableview controller backed by a `NSFetchedResultsController`. The controller will update its tableview when data changes.
+`DRYCoreDataTableViewController` provides a tableview controller backed by a `NSFetchedResultsController`. The controller will update its tableview when data changes.
 
-Create an instance of 'DRYCoreDataTableViewController' and add a `NSFetchedResultsController` to get started. You can also tell the controller whether to use section indexes or not. This can done by setting the correct value for `needsSectionIndex`. If it is set to YES, the `sectionIndexTitles`of the `NSFetchedResultsController` is used to display the section titles.
+Create an instance of `DRYCoreDataTableViewController` and add a `NSFetchedResultsController` to get started. You can also tell the controller whether to use section indexes or not. This can be done by setting the correct value for `needsSectionIndex`. If it is set to YES, the `sectionIndexTitles`of the `NSFetchedResultsController` is used to display the section titles.
 
 ## Requirements
 
