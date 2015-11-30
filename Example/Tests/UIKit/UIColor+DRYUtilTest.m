@@ -6,14 +6,15 @@
 //  Copyright © 2015 Michael Seghers. All rights reserved.
 //
 
+#import <DRYUtilities/UIColor+DRYUtil.h>
 #import "DRYUtilitiesTests.h"
 #import "UIColor+DRYUtil.h"
 
-@interface UIColor_DRYUtil : XCTestCase
+@interface UIColor_DRYUtilTest : XCTestCase
 
 @end
 
-@implementation UIColor_DRYUtil
+@implementation UIColor_DRYUtilTest
 
 - (void)testHexStringIsSameAsRgbColor {
     UIColor *color = [UIColor dryColorFromRGBHexString:@"#FF00FF"];

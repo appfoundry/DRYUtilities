@@ -43,7 +43,8 @@
 		AE03DD18A50D2F4BD623631A /* DefaultConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE03DC53530E181FD71CEE93 /* DefaultConfiguration.plist */; };
 		AE03DDCC345AD86C1AD2F8B2 /* DRYTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = AE03D45F7E2EBC456702024F /* DRYTheme.m */; };
 		E56459F61B454B6B004DCF97 /* NSString+DRYUtilTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E56459F51B454B6B004DCF97 /* NSString+DRYUtilTest.m */; };
-		EBC02BBA1C06F436007C3EAB /* UIColor+DRYUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC02BB91C06F436007C3EAB /* UIColor+DRYUtil.m */; };
+		EBC02BBA1C06F436007C3EAB /* UIColor+DRYUtilTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC02BB91C06F436007C3EAB /* UIColor+DRYUtilTest.m */; };
+		EBC02BBC1C085C87007C3EAB /* UIImage+ColorPixelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC02BBB1C085C87007C3EAB /* UIImage+ColorPixelTest.m */; };
 		EBD027CA1C046F91005E46D5 /* ExampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD027C91C046F91005E46D5 /* ExampleTableViewController.m */; };
 		EBD027CD1C05A27C005E46D5 /* ExampleDRYNSNullSupportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD027CC1C05A27C005E46D5 /* ExampleDRYNSNullSupportViewController.m */; };
 		EBD027D01C05B3E7005E46D5 /* AFNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD027CF1C05B3E7005E46D5 /* AFNavigationViewController.m */; };
@@ -119,7 +120,8 @@
 		DB5C04727DEB240CC61B4F8C /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E56459F51B454B6B004DCF97 /* NSString+DRYUtilTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DRYUtilTest.m"; sourceTree = "<group>"; };
 		E6243E93EB4140649D8A1857 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		EBC02BB91C06F436007C3EAB /* UIColor+DRYUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DRYUtil.m"; sourceTree = "<group>"; };
+		EBC02BB91C06F436007C3EAB /* UIColor+DRYUtilTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DRYUtilTest.m"; sourceTree = "<group>"; };
+		EBC02BBB1C085C87007C3EAB /* UIImage+ColorPixelTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorPixelTest.m"; sourceTree = "<group>"; };
 		EBD027C81C046F91005E46D5 /* ExampleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleTableViewController.h; sourceTree = "<group>"; };
 		EBD027C91C046F91005E46D5 /* ExampleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleTableViewController.m; sourceTree = "<group>"; };
 		EBD027CB1C05A27C005E46D5 /* ExampleDRYNSNullSupportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleDRYNSNullSupportViewController.h; sourceTree = "<group>"; };
@@ -345,7 +347,8 @@
 		AE03D5D650465E4826CBC29A /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				EBC02BB91C06F436007C3EAB /* UIColor+DRYUtil.m */,
+				EBC02BB91C06F436007C3EAB /* UIColor+DRYUtilTest.m */,
+				EBC02BBB1C085C87007C3EAB /* UIImage+ColorPixelTest.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -614,10 +617,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBC02BBA1C06F436007C3EAB /* UIColor+DRYUtil.m in Sources */,
+				EBC02BBA1C06F436007C3EAB /* UIColor+DRYUtilTest.m in Sources */,
 				27F242871A8A4C0B0079F8EC /* DRYBaseDynamicPropertyProviderTest.m in Sources */,
 				E56459F61B454B6B004DCF97 /* NSString+DRYUtilTest.m in Sources */,
 				27F2428C1A8A51F70079F8EC /* DRYPlistResourceReaderTest.m in Sources */,
+				EBC02BBC1C085C87007C3EAB /* UIImage+ColorPixelTest.m in Sources */,
 				3323FA8487593501D5A68573 /* NSString+DRYTemplateReplacementTest.m in Sources */,
 				275003271B39814400CFAF6A /* DRYSecurityStoreWrapperTest.m in Sources */,
 				275003151B39645800CFAF6A /* NSString+DRYHexTest.m in Sources */,
