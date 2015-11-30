@@ -171,7 +171,7 @@ The `nibName`is used to indicate which .xib file should be used. The .xib file c
 DRYSecurityCredentials *securityCredentials = [[DRYSecurityCredentials alloc] initWithUserName:@"superAwesomeUsername" andPassword:@"superSecurePassword"];
 ```
 
-`DRYSecurityStoreWrapper` is a wrapper class providing access to a username/password pair identified with an `identifer`.
+`DRYSecurityStoreWrapper` is a wrapper class providing access to a username/password pair identified with an `identifier`.
 It allows you to store this username/password pair using the `Security` library provided by iOS.
 
 ```objective-c
