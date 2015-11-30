@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "DRYUtilitiesTests.h"
 #import "UIImage+ColorPixel.h"
 
