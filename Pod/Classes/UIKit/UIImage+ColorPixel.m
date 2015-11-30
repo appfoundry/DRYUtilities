@@ -2,6 +2,7 @@
 // Created by Willem Van Pelt on 25/11/15.
 //
 
+#import <UIKit/UIKit.h>
 #import "UIImage+ColorPixel.h"
 
 
