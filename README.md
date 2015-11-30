@@ -1,6 +1,6 @@
 # DRYUtilities
 
-[![CI Status](http://img.shields.io/travis/Michael Seghers/DRYUtilities.svg?style=flat)](https://travis-ci.org/Michael Seghers/DRYUtilities)
+[![CI Status](http://img.shields.io/travis/appfoundry/DRYUtilities.svg?style=flat)](https://travis-ci.org/appfoundry/DRYUtilities)
 [![Version](https://img.shields.io/cocoapods/v/DRYUtilities.svg?style=flat)](http://cocoadocs.org/docsets/DRYUtilities)
 [![License](https://img.shields.io/cocoapods/l/DRYUtilities.svg?style=flat)](http://cocoadocs.org/docsets/DRYUtilities)
 [![Platform](https://img.shields.io/cocoapods/p/DRYUtilities.svg?style=flat)](http://cocoadocs.org/docsets/DRYUtilities)
@@ -131,6 +131,17 @@ UIColor *redColor = [UIColor dryColorFromRGBHexString:@"#FF0000"];
 ```
 
 #### UIImage ColorPixel
+`ColorPixel` category provides the capability of crearing UIImage instances based on a single color.
+It will create a UIImage of 1px filled with the provided color.
+
+```objective-c
+UIImage *redImage = [UIImage dryImageWithColor:[UIColor redColor]];
+```
+
+There also the possibility to create a UIImage with a different size. However this consumes more resources, so be careful when using this approach.
+```objective-c
+UIImage *redImage = [UIImage dryImageWithColor:[UIColor redColor] size:CGSizeMake(10, 10)];
+```
 
 #### UIView DRYLoadFromNib
 
