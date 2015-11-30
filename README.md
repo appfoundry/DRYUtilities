@@ -64,6 +64,9 @@ NSLog(@"Property value: %@", propertyProvider.firstProperty);
 Foundation utilities provides utility methods on different Foundation classes.
 
 #### NSString DRYHex
+
+[Example usage: `ExampleDRYNSStringHexViewController`](Example/DRYUtilities/Foundation/ExampleDRYNSStringHexViewController.m)
+
 `dryStringFromHexWithData:` will return a hexadecimal string representing a NSData object.
 
 ```objective-c
@@ -75,6 +78,9 @@ NSLog(@"Hex string: %@", hexString); //Hex string: 000102
 ```
 
 #### NSString DRYTemplateReplacement
+
+[Example usage: `ExampleDRYNSStringTemplateReplacementViewController`](Example/DRYUtilities/Foundation/ExampleDRYNSStringTemplateReplacementViewController.m)
+
 `dryStringByReplacingTemplatesWithValuesFromDictionary:` can be used to replace placeholders in a string. It will return a new string containing the result after replacing the placeholders.
 
 ```objective-c
@@ -105,6 +111,9 @@ NSLog(@"Is not blank: %d", [@"\t\n" dryIsNotBlank]); //Is not blank: 0
 ```
 
 #### NSObject/NSNull DRYNSNullSupport
+
+[Example usage: `ExampleDRYNSNullSupportViewController`](Example/DRYUtilities/Foundation/ExampleDRYNSNullSupportViewController.m)
+
 `dryValueOrNil` can be used to convert an `[NSNull null]` value to `nil`. This can be useful for example when storing a NSDictionary with NSNull values to a Core Data object.
 
 ```objective-c
@@ -123,6 +132,8 @@ NSLog(@"Result: %d", [[NSNull null] dryIsNSNull]); //Result: 1
 
 ### UIKit utilities
 #### UIColor DRYUtil
+
+[Example usage: `ExampleDRYUIColorDRYUtilViewController`](Example/DRYUtilities/UIKit/ExampleDRYUIColorDRYUtilViewController.m)
 
 `dryColorFromRGBHexString:` provides the ability the create UIColor objects based on a RGB hex representation of a color.
 
@@ -144,6 +155,8 @@ UIImage *redImage = [UIImage dryImageWithColor:[UIColor redColor] size:CGSizeMak
 ```
 
 #### UIView DRYLoadFromNib
+
+[Example usage: `ExampleDRYLoadFromNibController`](Example/DRYUtilities/UIKit/ExampleDRYLoadFromNibController.m)
 
 ### Security utilities
 ### CoreData utilities
