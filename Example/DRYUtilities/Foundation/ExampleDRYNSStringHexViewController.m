@@ -15,8 +15,8 @@
 
 }
 - (IBAction)convertToHexString:(id)sender {
-    char bytes[3] = {0, 1, 2};
-    NSData *data = [NSData dataWithBytes:bytes length:3];
+    char bytes[2] = {0, 255};
+    NSData *data = [NSData dataWithBytes:bytes length:2];
     
     _convertedTextLabel.text = [NSString dryStringWithHexFromData:data];
     

@@ -8,8 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		15A3459867BB6DAE4C32480B /* libPods-DRYUtilities.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA13A83D0CA0B6AA5464FC3E /* libPods-DRYUtilities.a */; };
+		272B742B1C10469B00E3A4A5 /* DRYDictionaryResourceReaderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 272B742A1C10469B00E3A4A5 /* DRYDictionaryResourceReaderTest.m */; };
 		275003151B39645800CFAF6A /* NSString+DRYHexTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 275003141B39645800CFAF6A /* NSString+DRYHexTest.m */; };
 		275003271B39814400CFAF6A /* DRYSecurityStoreWrapperTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 275003261B39814400CFAF6A /* DRYSecurityStoreWrapperTest.m */; };
+		27695C4E1C104D4900F411FE /* DRYJsonResourceReaderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 27695C4D1C104D4900F411FE /* DRYJsonResourceReaderTest.m */; };
+		27695C501C104D7200F411FE /* TestResource.json in Resources */ = {isa = PBXBuildFile; fileRef = 27695C4F1C104D7200F411FE /* TestResource.json */; };
+		27695C521C104E3B00F411FE /* Array.json in Resources */ = {isa = PBXBuildFile; fileRef = 27695C511C104E3B00F411FE /* Array.json */; };
 		27F242871A8A4C0B0079F8EC /* DRYBaseDynamicPropertyProviderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F242861A8A4C0B0079F8EC /* DRYBaseDynamicPropertyProviderTest.m */; };
 		27F2428C1A8A51F70079F8EC /* DRYPlistResourceReaderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F2428B1A8A51F70079F8EC /* DRYPlistResourceReaderTest.m */; };
 		27F2429D1A8A5B030079F8EC /* TestResource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27F2429C1A8A5B030079F8EC /* TestResource.plist */; };
@@ -64,8 +68,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		272B742A1C10469B00E3A4A5 /* DRYDictionaryResourceReaderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRYDictionaryResourceReaderTest.m; sourceTree = "<group>"; };
 		275003141B39645800CFAF6A /* NSString+DRYHexTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DRYHexTest.m"; sourceTree = "<group>"; };
 		275003261B39814400CFAF6A /* DRYSecurityStoreWrapperTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRYSecurityStoreWrapperTest.m; sourceTree = "<group>"; };
+		27695C4D1C104D4900F411FE /* DRYJsonResourceReaderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRYJsonResourceReaderTest.m; sourceTree = "<group>"; };
+		27695C4F1C104D7200F411FE /* TestResource.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestResource.json; sourceTree = "<group>"; };
+		27695C511C104E3B00F411FE /* Array.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Array.json; sourceTree = "<group>"; };
 		27F242861A8A4C0B0079F8EC /* DRYBaseDynamicPropertyProviderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRYBaseDynamicPropertyProviderTest.m; sourceTree = "<group>"; };
 		27F2428B1A8A51F70079F8EC /* DRYPlistResourceReaderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRYPlistResourceReaderTest.m; sourceTree = "<group>"; };
 		27F2428D1A8A52290079F8EC /* DRYUtilitiesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DRYUtilitiesTests.h; sourceTree = "<group>"; };
@@ -176,6 +184,10 @@
 				27F2428B1A8A51F70079F8EC /* DRYPlistResourceReaderTest.m */,
 				27F2429C1A8A5B030079F8EC /* TestResource.plist */,
 				27F2429E1A8A5B350079F8EC /* FallbackTestResource.plist */,
+				272B742A1C10469B00E3A4A5 /* DRYDictionaryResourceReaderTest.m */,
+				27695C4D1C104D4900F411FE /* DRYJsonResourceReaderTest.m */,
+				27695C4F1C104D7200F411FE /* TestResource.json */,
+				27695C511C104E3B00F411FE /* Array.json */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -491,8 +503,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				27F2429D1A8A5B030079F8EC /* TestResource.plist in Resources */,
+				27695C501C104D7200F411FE /* TestResource.json in Resources */,
 				27F2429F1A8A5B350079F8EC /* FallbackTestResource.plist in Resources */,
 				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
+				27695C521C104E3B00F411FE /* Array.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,8 +633,10 @@
 			files = (
 				EBC02BBA1C06F436007C3EAB /* UIColor+DRYUtilTest.m in Sources */,
 				27F242871A8A4C0B0079F8EC /* DRYBaseDynamicPropertyProviderTest.m in Sources */,
+				27695C4E1C104D4900F411FE /* DRYJsonResourceReaderTest.m in Sources */,
 				E56459F61B454B6B004DCF97 /* NSString+DRYUtilTest.m in Sources */,
 				27F2428C1A8A51F70079F8EC /* DRYPlistResourceReaderTest.m in Sources */,
+				272B742B1C10469B00E3A4A5 /* DRYDictionaryResourceReaderTest.m in Sources */,
 				EBC02BBC1C085C87007C3EAB /* UIImage+ColorPixelTest.m in Sources */,
 				3323FA8487593501D5A68573 /* NSString+DRYTemplateReplacementTest.m in Sources */,
 				275003271B39814400CFAF6A /* DRYSecurityStoreWrapperTest.m in Sources */,

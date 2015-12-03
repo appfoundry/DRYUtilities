@@ -22,17 +22,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _textToResolve.text = @"Hi {name}, you live in __country__";
+    _textToResolve.text = @"Hello {name}, you live in __location__";
     _valueOne.text = @"world";
-    _valueTwo.text = @"all countries";
+    _valueTwo.text = @"the universe";
 }
 
 - (IBAction)resolveText:(id)sender {
+    NSDictionary *valueDictionary = @{
+                                      @"name" : _valueOne.text,
+                                      @"location" : _valueTwo.text
+                                      };
+    
     //Resolve the template with a dictionary using the standard template notation: {placeholderName}
-    _resolvedTextLabel.text = [_textToResolve.text dryStringByReplacingTemplatesWithValuesFromDictionary:@{@"name" : _valueOne.text}];
-
+    _resolvedTextLabel.text = [_textToResolve.text dryStringByReplacingTemplatesWithValuesFromDictionary:valueDictionary];
+    
     //Resolve the template with a dictionary using a custom template notation like __placeholderName__
-    _customResolvedTextLabel.text = [_textToResolve.text dryStringByReplacingTemplatesWithValuesFromDictionary:@{@"country" : _valueTwo.text}
+    _customResolvedTextLabel.text = [_textToResolve.text dryStringByReplacingTemplatesWithValuesFromDictionary:valueDictionary
                                                                                             withTemplatePrefix:@"__"
                                                                                                 templateSuffix:@"__"];
 }
