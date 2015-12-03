@@ -38,6 +38,7 @@ A resource reader which reads data from a plist in the application bundle.
  @param fallbackPlistName the base name (without extension!) of the fallback plist file as present in the bundle which this class belongs to.
  */
 - (instancetype)initWithPlistNamed:(NSString *)plistName andFallbackPlistNamed:(NSString *)fallbackPlistName;
+
 /**
  Create reader that reads data from the plist file with given name and from the given fallback.
  
@@ -56,6 +57,7 @@ A resource reader which reads data from a plist in the application bundle.
  @param resourceReader the resource reader, to read values from when they cannot be found in the given plist.
  */
 - (instancetype)initWithPlistNamed:(NSString *)plistName andFallbackReader:(id<DRYResourceReader>)resourceReader;
+
 /**
  Create reader that reads data from the plist file with given name and from the given fallback reader. The plist file is taken from the given bundle.
  

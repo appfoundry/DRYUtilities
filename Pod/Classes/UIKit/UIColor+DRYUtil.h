@@ -8,7 +8,8 @@
 @interface UIColor (DRYUtil)
 
 /*
- * Returns a UIColor instance based on the provided RGB hex string
+ * Returns a UIColor instance based on the provided RGB hex string. The string should be prefixed with a #.
+ * eg: #000000 -> black, #ffffff -> white
  * */
 + (UIColor *)dryColorFromRGBHexString:(NSString *) colorString;
 

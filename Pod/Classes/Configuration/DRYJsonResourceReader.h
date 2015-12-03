@@ -38,6 +38,7 @@
  @param resourceReader the resource reader, to read values from when they cannot be found in the given json.
  */
 - (instancetype)initWithJsonNamed:(NSString *)jsonName andFallbackReader:(id<DRYResourceReader>)resourceReader;
+
 /**
  Create a reader that reads data from the json file with given name and from the given fallback reader. The json file is taken from the given bundle.
  

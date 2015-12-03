@@ -11,7 +11,7 @@
 @interface NSString (DRYHex)
 
 /**
- Returns a hexadecimal representation of the given data.
+ Returns a hexadecimal representation of the bytes in the given data.
  */
 + (NSString *)dryStringWithHexFromData:(NSData *)data;
 
