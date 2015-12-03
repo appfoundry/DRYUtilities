@@ -7,11 +7,13 @@
 
 @implementation NSString (DRYTemplateReplacement)
 
-- (NSString *)dryStringByReplacingTemplatesWithValuesFromDictionary:(NSDictionary *)dictionary withTemplatePrefix:(NSString *)prefix templateSuffix:(NSString *)suffix {
+- (NSString *)dryStringByReplacingTemplatesWithValuesFromDictionary:(NSDictionary *)dictionary
+                                                 withTemplatePrefix:(NSString *)prefix templateSuffix:(NSString *)suffix {
     NSMutableString *mutable = [self mutableCopy];
     [dictionary enumerateKeysAndObjectsUsingBlock:^(id key, id value, BOOL *stop) {
         NSString *template = [NSString stringWithFormat:@"%@%@%@", prefix, key, suffix];
-        [mutable replaceOccurrencesOfString:template withString:[value description] options:NSLiteralSearch range:NSMakeRange(0, [mutable length])];
+        [mutable replaceOccurrencesOfString:template withString:[value description] options:NSLiteralSearch
+                                      range:NSMakeRange(0, [mutable length])];
     }];
     return [mutable copy];
 }

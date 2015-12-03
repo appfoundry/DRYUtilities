@@ -7,10 +7,10 @@
 //
 
 #import "DRYPlistResourceReader.h"
+#import "DRYDictionaryResourceReader.h"
 
 @interface DRYPlistResourceReader () {
-    NSDictionary *_configContent;
-    NSDictionary *_defaultContentConfig;
+    DRYDictionaryResourceReader *_dictionaryResourceReader;
 }
 
 @end
@@ -19,29 +19,36 @@
 @implementation DRYPlistResourceReader
 
 - (instancetype)initWithPlistNamed:(NSString *)plistName {
-    self = [super init];
-    if (self) {
-        NSString *path = [[NSBundle bundleForClass:[self class]] pathForResource:plistName ofType:@"plist"];
-        _configContent = [NSDictionary dictionaryWithContentsOfFile:path];
-    }
-    return self;
+    return [self initWithPlistNamed:plistName inBundle:[NSBundle bundleForClass:[self class]]];
 }
 
-- (instancetype)initWithPlistNamed:(NSString *)plistName andFallbackPlistNames:(NSString *)fallbackPlistName {
-    self = [self initWithPlistNamed:plistName];
+- (instancetype)initWithPlistNamed:(NSString *)plistName inBundle:(NSBundle *)bundle {
+    return [self initWithPlistNamed:plistName fallbackResourceReader:nil inBundle:bundle];
+}
+
+- (instancetype)initWithPlistNamed:(NSString *)plistName andFallbackPlistNamed:(NSString *)fallbackPlistName {
+    return [self initWithPlistNamed:plistName andFallbackPlistNamed:fallbackPlistName inBundle:[NSBundle bundleForClass:[self class]]];
+}
+
+- (instancetype)initWithPlistNamed:(NSString *)plistName andFallbackPlistNamed:(NSString *)fallbackPlistName inBundle:(NSBundle *)bundle {
+    return [self initWithPlistNamed:plistName fallbackResourceReader:[[DRYPlistResourceReader alloc] initWithPlistNamed:fallbackPlistName inBundle:bundle] inBundle:bundle];
+}
+
+- (instancetype)initWithPlistNamed:(NSString *)plistName fallbackResourceReader:(id<DRYResourceReader>)resourceReader {
+    return [self initWithPlistNamed:plistName fallbackResourceReader:resourceReader inBundle:[NSBundle bundleForClass:[self class]]];
+}
+
+- (instancetype)initWithPlistNamed:(NSString *)plistName fallbackResourceReader:(id<DRYResourceReader>)resourceReader inBundle:(NSBundle *)bundle {
+    self = [super init];
     if (self) {
-        NSString *defaultPath = [[NSBundle bundleForClass:[self class]] pathForResource:fallbackPlistName ofType:@"plist"];
-        _defaultContentConfig = [NSDictionary dictionaryWithContentsOfFile:defaultPath];
+        NSString *path = [bundle pathForResource:plistName ofType:@"plist"];
+        _dictionaryResourceReader = [[DRYDictionaryResourceReader alloc] initWithDictionary:[NSDictionary dictionaryWithContentsOfFile:path] fallbackResourceReader:resourceReader];
     }
     return self;
 }
 
 - (id)readPropertyWithKey:(NSString *)key {
-    id result = _configContent[key];
-    if (!result) {
-        result = _defaultContentConfig[key];
-    }
-    return result;
+    return [_dictionaryResourceReader readPropertyWithKey:key];
 }
 
 @end

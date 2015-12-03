@@ -8,6 +8,9 @@
 
 @protocol AFMultipartFormData;
 
+/**
+ Protocol replacement for a session manager.
+ */
 @protocol DRYHTTPSessionManager <NSObject>
 
 - (NSURLSessionDataTask *)GET:(NSString *)URLString

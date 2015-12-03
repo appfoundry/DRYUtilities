@@ -10,6 +10,9 @@
 
 @interface NSString (DRYUtil)
 
+/**
+ Returns YES if the string is not blank. A blank string is either nil, empty, or only contains whitespaces.
+ */
 - (BOOL)dryIsNotBlank;
 
 @end

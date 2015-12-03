@@ -11,10 +11,7 @@
 @implementation NSString (DRYUtil)
 
 - (BOOL)dryIsNotBlank {
-    if([self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]].length == 0){
-        return false;
-    }
-    return true;
+    return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]].length != 0;
 }
 
 @end
