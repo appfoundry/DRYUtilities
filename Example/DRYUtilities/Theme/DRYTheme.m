@@ -11,13 +11,9 @@
 
 }
 
-- (id)init {
-    self = [super init];
-    if (self) {
-        [self _customizeTableView];
-        [self _customizeAppearanceForNavigationBar];
-    }
-    return self;
+- (void)loadTheme {
+    [self _customizeTableView];
+    [self _customizeAppearanceForNavigationBar];
 }
 
 - (void)_customizeTableView {

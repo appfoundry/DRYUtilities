@@ -22,14 +22,14 @@
 }
 
 - (instancetype)initWithJsonNamed:(NSString *)jsonName inBundle:(NSBundle *)bundle {
-    return [self initWithJsonNamed:jsonName andFallbackReader:nil inBundle:bundle];
+    return [self initWithJsonNamed:jsonName fallbackResourceReader:nil inBundle:bundle];
 }
 
-- (instancetype)initWithJsonNamed:(NSString *)jsonName andFallbackReader:(id<DRYResourceReader>)resourceReader {
-    return [self initWithJsonNamed:jsonName andFallbackReader:resourceReader inBundle:[NSBundle bundleForClass:[self class]]];
+- (instancetype)initWithJsonNamed:(NSString *)jsonName fallbackResourceReader:(id<DRYResourceReader>)resourceReader {
+    return [self initWithJsonNamed:jsonName fallbackResourceReader:resourceReader inBundle:[NSBundle bundleForClass:[self class]]];
 }
 
-- (instancetype)initWithJsonNamed:(NSString *)jsonName andFallbackReader:(id<DRYResourceReader>)resourceReader inBundle:(NSBundle *)bundle {
+- (instancetype)initWithJsonNamed:(NSString *)jsonName fallbackResourceReader:(id<DRYResourceReader>)resourceReader inBundle:(NSBundle *)bundle {
     self = [super init];
     if (self) {
         NSString *path = [bundle pathForResource:jsonName ofType:@"json"];

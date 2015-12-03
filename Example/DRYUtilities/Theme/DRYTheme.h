@@ -6,4 +6,7 @@
 
 
 @interface DRYTheme : NSObject
+
+- (void)loadTheme;
+
 @end

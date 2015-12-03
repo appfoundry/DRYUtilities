@@ -14,7 +14,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [[DRYTheme alloc] init];
+    DRYTheme *theme = [[DRYTheme alloc] init];
+    [theme loadTheme];
     // Override point for customization after application launch.
     return YES;
 }

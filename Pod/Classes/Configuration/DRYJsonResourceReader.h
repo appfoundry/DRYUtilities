@@ -37,7 +37,7 @@
  @param jsonName the base name (without extension!) of the json file as present in the given bundle.
  @param resourceReader the resource reader, to read values from when they cannot be found in the given json.
  */
-- (instancetype)initWithJsonNamed:(NSString *)jsonName andFallbackReader:(id<DRYResourceReader>)resourceReader;
+- (instancetype)initWithJsonNamed:(NSString *)jsonName fallbackResourceReader:(id<DRYResourceReader>)resourceReader;
 
 /**
  Create a reader that reads data from the json file with given name and from the given fallback reader. The json file is taken from the given bundle.
@@ -48,5 +48,5 @@
  @param resourceReader the resource reader, to read values from when they cannot be found in the given json.
  @param bundle the bundle in which the json file can be found
  */
-- (instancetype)initWithJsonNamed:(NSString *)jsonName andFallbackReader:(id<DRYResourceReader>)resourceReader inBundle:(NSBundle *)bundle;
+- (instancetype)initWithJsonNamed:(NSString *)jsonName fallbackResourceReader:(id<DRYResourceReader>)resourceReader inBundle:(NSBundle *)bundle;
 @end

@@ -23,7 +23,7 @@
 }
 
 - (instancetype)initWithPlistNamed:(NSString *)plistName inBundle:(NSBundle *)bundle {
-    return [self initWithPlistNamed:plistName andFallbackReader:nil inBundle:bundle];
+    return [self initWithPlistNamed:plistName fallbackResourceReader:nil inBundle:bundle];
 }
 
 - (instancetype)initWithPlistNamed:(NSString *)plistName andFallbackPlistNamed:(NSString *)fallbackPlistName {
@@ -31,14 +31,14 @@
 }
 
 - (instancetype)initWithPlistNamed:(NSString *)plistName andFallbackPlistNamed:(NSString *)fallbackPlistName inBundle:(NSBundle *)bundle {
-    return [self initWithPlistNamed:plistName andFallbackReader:[[DRYPlistResourceReader alloc] initWithPlistNamed:fallbackPlistName inBundle:bundle] inBundle:bundle];
+    return [self initWithPlistNamed:plistName fallbackResourceReader:[[DRYPlistResourceReader alloc] initWithPlistNamed:fallbackPlistName inBundle:bundle] inBundle:bundle];
 }
 
-- (instancetype)initWithPlistNamed:(NSString *)plistName andFallbackReader:(id<DRYResourceReader>)resourceReader {
-    return [self initWithPlistNamed:plistName andFallbackReader:resourceReader inBundle:[NSBundle bundleForClass:[self class]]];
+- (instancetype)initWithPlistNamed:(NSString *)plistName fallbackResourceReader:(id<DRYResourceReader>)resourceReader {
+    return [self initWithPlistNamed:plistName fallbackResourceReader:resourceReader inBundle:[NSBundle bundleForClass:[self class]]];
 }
 
-- (instancetype)initWithPlistNamed:(NSString *)plistName andFallbackReader:(id<DRYResourceReader>)resourceReader inBundle:(NSBundle *)bundle {
+- (instancetype)initWithPlistNamed:(NSString *)plistName fallbackResourceReader:(id<DRYResourceReader>)resourceReader inBundle:(NSBundle *)bundle {
     self = [super init];
     if (self) {
         NSString *path = [bundle pathForResource:plistName ofType:@"plist"];

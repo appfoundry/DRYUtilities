@@ -33,7 +33,8 @@ This fallback resource will be used if the property can't be resolved using the 
 id <DRYResourceReader> reader = [[DRYPlistResourceReader alloc] initWithPlistNamed:@"Configuration"];
 
 //using fallback
-id <DRYResourceReader> reader = [[DRYPlistResourceReader alloc] initWithPlistNamed:@"Configuration" andFallbackPlistNamed:@"DefaultConfiguration"];
+id <DRYResourceReader> fallback = [[DRYJsonResourceReader alloc] initWithJsonNamed:"Fallback"];
+id <DRYResourceReader> reader = [[DRYPlistResourceReader alloc] initWithPlistNamed:@"Configuration" fallbackResourceReader:@"DefaultConfiguration"];
 ```
 
 #### DRYBaseDynamicPropertyProvider 
