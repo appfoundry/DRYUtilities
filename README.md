@@ -192,7 +192,20 @@ Create an instance of `DRYCoreDataTableViewController` and add a `NSFetchedResul
 DRYUtilities is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
-    pod "DRYUtilities"
+```
+pod "DRYUtilities"
+```
+
+If you prefer to install only specific sets of classes, you can install the following subspecs:
+
+```
+pod "DRYUtilities/Configuration"
+pod "DRYUtilities/CoreData"
+pod "DRYUtilities/Foundation"
+pod "DRYUtilities/Networking"
+pod "DRYUtilities/Security"
+pod "DRYUtilities/UIKit"
+```
 
 ## Author
 
