@@ -1,17 +1,17 @@
 PODS:
-  - DRYUtilities (1.5.1):
-    - DRYUtilities/Configuration (= 1.5.1)
-    - DRYUtilities/CoreData (= 1.5.1)
-    - DRYUtilities/Foundation (= 1.5.1)
-    - DRYUtilities/Networking (= 1.5.1)
-    - DRYUtilities/Security (= 1.5.1)
-    - DRYUtilities/UIKit (= 1.5.1)
-  - DRYUtilities/Configuration (1.5.1)
-  - DRYUtilities/CoreData (1.5.1)
-  - DRYUtilities/Foundation (1.5.1)
-  - DRYUtilities/Networking (1.5.1)
-  - DRYUtilities/Security (1.5.1)
-  - DRYUtilities/UIKit (1.5.1)
+  - DRYUtilities (1.6):
+    - DRYUtilities/Configuration (= 1.6)
+    - DRYUtilities/CoreData (= 1.6)
+    - DRYUtilities/Foundation (= 1.6)
+    - DRYUtilities/Networking (= 1.6)
+    - DRYUtilities/Security (= 1.6)
+    - DRYUtilities/UIKit (= 1.6)
+  - DRYUtilities/Configuration (1.6)
+  - DRYUtilities/CoreData (1.6)
+  - DRYUtilities/Foundation (1.6)
+  - DRYUtilities/Networking (1.6)
+  - DRYUtilities/Security (1.6)
+  - DRYUtilities/UIKit (1.6)
   - OCHamcrest (4.3.0)
   - OCMockito (2.0.1):
     - OCHamcrest (~> 4.0)
@@ -26,7 +26,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DRYUtilities: d71243d263cb86d7afae18c9f30e3fc3b5c7ba6d
+  DRYUtilities: b0528a4a2910cf1154eb891f00edfb383c5173e7
   OCHamcrest: cd63d27f48a266d4412c0b295b01b8f0940efa81
   OCMockito: f92ad4c6fac2841a88558879cfe517c40aebf91e
 
