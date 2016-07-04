@@ -8,6 +8,7 @@ typedef void(^ConstraintBlock)(UIView *controllerView, UIView *containerView);
 
 /**
  category to facilitate viewcontroller containment. Using the add and remove methods will make sure that the correct lifecycle methods will be called.
+ This category is not meant to be used when your parent viewcontroller uses transitions.
  */
 @interface UIViewController (DRYViewControllerContainment)
 

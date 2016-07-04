@@ -10,7 +10,7 @@
 	[self addChildViewController:controller];
 	[container addSubview:controller.view];
 	if (constraintBlock != NULL) {
-		constraintBlock(controller.view, self.view);
+		constraintBlock(controller.view, container);
 	}
 	[controller didMoveToParentViewController:self];
 }
@@ -23,7 +23,7 @@
 
 - (void)dryAddSubControllerUsingEdgeConstraints:(UIViewController *)controller withContainer:(UIView *)container {
 	[self dryAddSubController:controller withContainer:container applyingConstraintsFromBlock:^(UIView *controllerView, UIView *containerView) {
-		[controllerView addConstraints:@[
+		[containerView addConstraints:@[
 			[NSLayoutConstraint constraintWithItem:controllerView attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:containerView attribute:NSLayoutAttributeLeading multiplier:1 constant:0],
 			[NSLayoutConstraint constraintWithItem:controllerView attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:containerView attribute:NSLayoutAttributeTrailing multiplier:1 constant:0],
 			[NSLayoutConstraint constraintWithItem:controllerView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:containerView attribute:NSLayoutAttributeTop multiplier:1 constant:0],
