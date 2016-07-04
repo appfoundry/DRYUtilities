@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "DRYUtilities"
-  s.version          = "1.6.0"
+  s.version          = "1.7.0"
   s.summary          = "DRYUtilities provides common utilities used in projects by AppFoundry"
   s.homepage         = "https://github.com/appfoundry/DRYUtilities"
   s.license          = 'MIT'
@@ -45,10 +45,6 @@ Pod::Spec.new do |s|
     ss.source_files = 'Pod/Classes/UIKit/**/*'
     ss.weak_framework = 'UIKit'
   end
-
-  s.resource_bundles = {
-    'DRYUtilities' => ['Pod/Assets/*.png']
-  }
 
   s.frameworks = 'Foundation'
 end
