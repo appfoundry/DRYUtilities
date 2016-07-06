@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		15A3459867BB6DAE4C32480B /* libPods-DRYUtilities.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA13A83D0CA0B6AA5464FC3E /* libPods-DRYUtilities.a */; };
+		22C720934A679D70FAAEC067 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C60D3D424BF7B461AD55D0AA /* libPods-Tests.a */; };
 		272B742B1C10469B00E3A4A5 /* DRYDictionaryResourceReaderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 272B742A1C10469B00E3A4A5 /* DRYDictionaryResourceReaderTest.m */; };
 		275003151B39645800CFAF6A /* NSString+DRYHexTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 275003141B39645800CFAF6A /* NSString+DRYHexTest.m */; };
 		275003271B39814400CFAF6A /* DRYSecurityStoreWrapperTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 275003261B39814400CFAF6A /* DRYSecurityStoreWrapperTest.m */; };
@@ -21,6 +21,7 @@
 		27F242A71A8B51E90079F8EC /* SimpleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27F242A61A8B51E90079F8EC /* SimpleView.xib */; };
 		27F242A91A8B5F110079F8EC /* SimpleViewWithOwner.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27F242A81A8B5F110079F8EC /* SimpleViewWithOwner.xib */; };
 		27FBF5111ACA8ED500CACF79 /* NSNull+DRYNSNullSupportTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FBF5101ACA8ED500CACF79 /* NSNull+DRYNSNullSupportTest.m */; };
+		28EF440123E5E5C180753CE2 /* libPods-DRYUtilities.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1CA2DAE97BF30DF2861DCC /* libPods-DRYUtilities.a */; };
 		3323FA8487593501D5A68573 /* NSString+DRYTemplateReplacementTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3323F45878C77633CDF1A87B /* NSString+DRYTemplateReplacementTest.m */; };
 		3323FFA067BA3617BD7122AD /* NSObject+DRYNSNullSupportTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3323F004CE5F1FD711453EE1 /* NSObject+DRYNSNullSupportTest.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -35,7 +36,6 @@
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
-		734394968D041F17C4ABAFB3 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4658F80F41F57A5BA5CABF62 /* libPods-Tests.a */; };
 		AE03D1037B3EA5112716D8D3 /* ExampleDRYLoadFromNibController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE03D0913BF476E910CF1370 /* ExampleDRYLoadFromNibController.m */; };
 		AE03D157CCD1E8A0733EA34F /* ExampleDynamicPropertyProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = AE03D78BA75FC8DD9BE004BE /* ExampleDynamicPropertyProvider.m */; };
 		AE03D16E8FB0ADDEE230F4A5 /* ExampleConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE03D52CB4BB13E09EC2832B /* ExampleConfigurationViewController.m */; };
@@ -68,6 +68,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C1CA2DAE97BF30DF2861DCC /* libPods-DRYUtilities.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DRYUtilities.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18EAB00F7E180263FE53C555 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		272B742A1C10469B00E3A4A5 /* DRYDictionaryResourceReaderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRYDictionaryResourceReaderTest.m; sourceTree = "<group>"; };
 		275003141B39645800CFAF6A /* NSString+DRYHexTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DRYHexTest.m"; sourceTree = "<group>"; };
 		275003261B39814400CFAF6A /* DRYSecurityStoreWrapperTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRYSecurityStoreWrapperTest.m; sourceTree = "<group>"; };
@@ -84,9 +86,6 @@
 		27FBF5101ACA8ED500CACF79 /* NSNull+DRYNSNullSupportTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+DRYNSNullSupportTest.m"; sourceTree = "<group>"; };
 		3323F004CE5F1FD711453EE1 /* NSObject+DRYNSNullSupportTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DRYNSNullSupportTest.m"; sourceTree = "<group>"; };
 		3323F45878C77633CDF1A87B /* NSString+DRYTemplateReplacementTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DRYTemplateReplacementTest.m"; sourceTree = "<group>"; };
-		3F969BD88210D15A86B4647A /* Pods-DRYUtilities.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DRYUtilities.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DRYUtilities/Pods-DRYUtilities.debug.xcconfig"; sourceTree = "<group>"; };
-		4658F80F41F57A5BA5CABF62 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		51D8EC1C7AFFDC44AAAE68FC /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* DRYUtilities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DRYUtilities.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -104,6 +103,7 @@
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		857639427BA80A890FCF8070 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		AE03D05BABA866D48FAE9BF7 /* ExampleDRYUIColorDRYUtilViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleDRYUIColorDRYUtilViewController.m; sourceTree = "<group>"; };
 		AE03D0913BF476E910CF1370 /* ExampleDRYLoadFromNibController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleDRYLoadFromNibController.m; sourceTree = "<group>"; };
 		AE03D10C1D283D2DA2CC0267 /* UIColor+AFColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+AFColor.h"; sourceTree = "<group>"; };
@@ -122,10 +122,9 @@
 		AE03DDB2FDAD73B120CD9427 /* UIImage+AFImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AFImage.m"; sourceTree = "<group>"; };
 		AE03DE94D8DE2EC6DDB830ED /* UIColor+AFColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AFColor.m"; sourceTree = "<group>"; };
 		AE03DFB77CC1A47F47BEBC6C /* ExampleDRYLoadFromNibController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleDRYLoadFromNibController.h; sourceTree = "<group>"; };
-		B0D0FA173411C76F6B1EB97D /* Pods-DRYUtilities.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DRYUtilities.release.xcconfig"; path = "Pods/Target Support Files/Pods-DRYUtilities/Pods-DRYUtilities.release.xcconfig"; sourceTree = "<group>"; };
 		B4A8735989C3368DF6C69D42 /* DRYUtilities.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DRYUtilities.podspec; path = ../DRYUtilities.podspec; sourceTree = "<group>"; };
 		C491B585278DD8C64C95C841 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		DB5C04727DEB240CC61B4F8C /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		C60D3D424BF7B461AD55D0AA /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E56459F51B454B6B004DCF97 /* NSString+DRYUtilTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DRYUtilTest.m"; sourceTree = "<group>"; };
 		E6243E93EB4140649D8A1857 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		EBC02BB91C06F436007C3EAB /* UIColor+DRYUtilTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DRYUtilTest.m"; sourceTree = "<group>"; };
@@ -140,7 +139,8 @@
 		EBD027D31C05C74B005E46D5 /* ExampleDRYNSStringTemplateReplacementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleDRYNSStringTemplateReplacementViewController.h; sourceTree = "<group>"; };
 		EBD027D41C05C74B005E46D5 /* ExampleDRYNSStringTemplateReplacementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleDRYNSStringTemplateReplacementViewController.m; sourceTree = "<group>"; };
 		EBD027D91C060192005E46D5 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
-		FA13A83D0CA0B6AA5464FC3E /* libPods-DRYUtilities.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DRYUtilities.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F502F9D2B24B04893AB84828 /* Pods-DRYUtilities.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DRYUtilities.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DRYUtilities/Pods-DRYUtilities.debug.xcconfig"; sourceTree = "<group>"; };
+		F5F4B0B6A64C153422C66783 /* Pods-DRYUtilities.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DRYUtilities.release.xcconfig"; path = "Pods/Target Support Files/Pods-DRYUtilities/Pods-DRYUtilities.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +151,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				15A3459867BB6DAE4C32480B /* libPods-DRYUtilities.a in Frameworks */,
+				28EF440123E5E5C180753CE2 /* libPods-DRYUtilities.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +162,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				734394968D041F17C4ABAFB3 /* libPods-Tests.a in Frameworks */,
+				22C720934A679D70FAAEC067 /* libPods-Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +228,17 @@
 			path = NSObject;
 			sourceTree = "<group>";
 		};
+		4CA4397515B0E7442DC67237 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F502F9D2B24B04893AB84828 /* Pods-DRYUtilities.debug.xcconfig */,
+				F5F4B0B6A64C153422C66783 /* Pods-DRYUtilities.release.xcconfig */,
+				18EAB00F7E180263FE53C555 /* Pods-Tests.debug.xcconfig */,
+				857639427BA80A890FCF8070 /* Pods-Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -236,7 +247,7 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				AADDD20785D4C1B50A14830A /* Pods */,
+				4CA4397515B0E7442DC67237 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -256,8 +267,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				FA13A83D0CA0B6AA5464FC3E /* libPods-DRYUtilities.a */,
-				4658F80F41F57A5BA5CABF62 /* libPods-Tests.a */,
+				0C1CA2DAE97BF30DF2861DCC /* libPods-DRYUtilities.a */,
+				C60D3D424BF7B461AD55D0AA /* libPods-Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -331,17 +342,6 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		AADDD20785D4C1B50A14830A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3F969BD88210D15A86B4647A /* Pods-DRYUtilities.debug.xcconfig */,
-				B0D0FA173411C76F6B1EB97D /* Pods-DRYUtilities.release.xcconfig */,
-				DB5C04727DEB240CC61B4F8C /* Pods-Tests.debug.xcconfig */,
-				51D8EC1C7AFFDC44AAAE68FC /* Pods-Tests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		AE03D38A82798772815C52A9 /* Theme */ = {
 			isa = PBXGroup;
 			children = (
@@ -407,12 +407,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "DRYUtilities" */;
 			buildPhases = (
-				89A0DD42064DCCA57BE82445 /* Check Pods Manifest.lock */,
+				6202E802E8ADD8489D2B3A5A /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				0349EDC9CEE99B7E927A9F57 /* Copy Pods Resources */,
-				CBFE3F3D896CE2C015247A15 /* Embed Pods Frameworks */,
+				3FDFD7235047C974D6BF2BC4 /* [CP] Embed Pods Frameworks */,
+				711A6AA9EA0B45638D87A108 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -427,12 +427,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "Tests" */;
 			buildPhases = (
-				7DE286A5D50DC0BE73D0E1D3 /* Check Pods Manifest.lock */,
+				2282B3E38DB656795FBEB361 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				A12DD3B2AFB3094298D26152 /* Copy Pods Resources */,
-				E0483828F4A1A56E14C75A16 /* Embed Pods Frameworks */,
+				F31DEC38B2FA499A32006E55 /* [CP] Embed Pods Frameworks */,
+				862D8A4D0AAB4EFC68FA3CD1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -513,29 +513,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0349EDC9CEE99B7E927A9F57 /* Copy Pods Resources */ = {
+		2282B3E38DB656795FBEB361 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DRYUtilities/Pods-DRYUtilities-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7DE286A5D50DC0BE73D0E1D3 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -543,44 +528,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		89A0DD42064DCCA57BE82445 /* Check Pods Manifest.lock */ = {
+		3FDFD7235047C974D6BF2BC4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		A12DD3B2AFB3094298D26152 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CBFE3F3D896CE2C015247A15 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -588,14 +543,59 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DRYUtilities/Pods-DRYUtilities-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E0483828F4A1A56E14C75A16 /* Embed Pods Frameworks */ = {
+		6202E802E8ADD8489D2B3A5A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		711A6AA9EA0B45638D87A108 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DRYUtilities/Pods-DRYUtilities-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		862D8A4D0AAB4EFC68FA3CD1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F31DEC38B2FA499A32006E55 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -759,7 +759,7 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F969BD88210D15A86B4647A /* Pods-DRYUtilities.debug.xcconfig */;
+			baseConfigurationReference = F502F9D2B24B04893AB84828 /* Pods-DRYUtilities.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -776,7 +776,7 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0D0FA173411C76F6B1EB97D /* Pods-DRYUtilities.release.xcconfig */;
+			baseConfigurationReference = F5F4B0B6A64C153422C66783 /* Pods-DRYUtilities.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -793,7 +793,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB5C04727DEB240CC61B4F8C /* Pods-Tests.debug.xcconfig */;
+			baseConfigurationReference = 18EAB00F7E180263FE53C555 /* Pods-Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DRYUtilities.app/DRYUtilities";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -816,7 +816,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51D8EC1C7AFFDC44AAAE68FC /* Pods-Tests.release.xcconfig */;
+			baseConfigurationReference = 857639427BA80A890FCF8070 /* Pods-Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DRYUtilities.app/DRYUtilities";
 				FRAMEWORK_SEARCH_PATHS = (

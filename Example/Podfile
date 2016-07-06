@@ -1,12 +1,10 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-target 'DRYUtilities', :exclusive => true do
+target 'DRYUtilities'  do
   pod "DRYUtilities", :path => "../"
 end
 
-target 'Tests', :exclusive => true do
-  pod "DRYUtilities", :path => "../"
-
+target 'Tests' do
   pod "OCHamcrest"
   pod "OCMockito"
 end

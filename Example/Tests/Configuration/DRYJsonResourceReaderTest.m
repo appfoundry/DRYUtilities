@@ -19,17 +19,17 @@
 
 #pragma mark - Read property from plist without fallback resource
 - (void)testReadProperty_shouldReturnPropertyFromPlist {
-    _reader = [[DRYJsonResourceReader alloc] initWithJsonNamed:@"TestResource"];
+    _reader = [[DRYJsonResourceReader alloc] initWithJsonNamed:@"TestResource" inBundle:[NSBundle bundleForClass:[self class]]];
     assertThat([_reader readPropertyWithKey:@"testKey"], is(equalTo(@"testValue")));
 }
 
 - (void)testReadProperty_shouldReturnNilWhenKeyNotFoundAndNoFallbackAvailable {
-    _reader = [[DRYJsonResourceReader alloc] initWithJsonNamed:@"TestResource"];
+    _reader = [[DRYJsonResourceReader alloc] initWithJsonNamed:@"TestResource" inBundle:[NSBundle bundleForClass:[self class]]];
     assertThat([_reader readPropertyWithKey:@"fallbackKey"], is(nilValue()));
 }
 
 - (void)testShouldNotInitWithNonDictionaryJson {
-    _reader = [[DRYJsonResourceReader alloc] initWithJsonNamed:@"Array"];
+    _reader = [[DRYJsonResourceReader alloc] initWithJsonNamed:@"Array" inBundle:[NSBundle bundleForClass:[self class]]];
     assertThat(_reader, is(nilValue()));
 }
 

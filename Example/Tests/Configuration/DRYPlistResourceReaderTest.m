@@ -19,7 +19,7 @@
 
 #pragma mark - Read property from plist without fallback resource
 - (void)testReadProperty_shouldReturnPropertyFromPlist {
-    _reader = [[DRYPlistResourceReader alloc] initWithPlistNamed:@"TestResource"];
+    _reader = [[DRYPlistResourceReader alloc] initWithPlistNamed:@"TestResource" inBundle:[NSBundle bundleForClass:[self class]]];
     assertThat([_reader readPropertyWithKey:@"testKey"], is(equalTo(@"testValue")));
 }
 
@@ -30,12 +30,12 @@
 
 #pragma mark - Read property from plist without with fallback resource
 - (void)testReadProperty_shouldReturnPropertyFromPlist_evenIfFallbackIsAvailable {
-    _reader = [[DRYPlistResourceReader alloc] initWithPlistNamed:@"TestResource" andFallbackPlistNamed:@"FallbackTestResource"];
+    _reader = [[DRYPlistResourceReader alloc] initWithPlistNamed:@"TestResource" andFallbackPlistNamed:@"FallbackTestResource" inBundle:[NSBundle bundleForClass:[self class]]];
     assertThat([_reader readPropertyWithKey:@"testKey"], is(equalTo(@"testValue")));
 }
 
 - (void)testReadProperty_shouldReturnFallBackValueWhenKeyNotFoundAndFallbackAvailable {
-    _reader = [[DRYPlistResourceReader alloc] initWithPlistNamed:@"TestResource" andFallbackPlistNamed:@"FallbackTestResource"];
+    _reader = [[DRYPlistResourceReader alloc] initWithPlistNamed:@"TestResource" andFallbackPlistNamed:@"FallbackTestResource" inBundle:[NSBundle bundleForClass:[self class]]];
     assertThat([_reader readPropertyWithKey:@"fallbackKey"], is(equalTo(@"fallbackValue")));
 }
 
