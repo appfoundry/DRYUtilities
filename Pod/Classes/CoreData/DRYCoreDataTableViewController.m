@@ -145,7 +145,9 @@
             case NSFetchedResultsChangeUpdate:
 				if([self.tableView.dataSource respondsToSelector:@selector(configureCell:forIndexPath:)]) {
 					UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
-					[((id <DRYCoreDataTableViewDataSource>) self.tableView.dataSource) configureCell:cell forIndexPath:indexPath];
+                    if (cell) {
+                        [((id <DRYCoreDataTableViewDataSource>) self.tableView.dataSource) configureCell:cell forIndexPath:indexPath];
+                    }
 				}
                 break;
             case NSFetchedResultsChangeMove:
