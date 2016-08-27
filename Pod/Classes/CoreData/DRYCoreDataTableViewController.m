@@ -143,10 +143,10 @@
                 break;
 
             case NSFetchedResultsChangeUpdate:
-				if([self.tableView.dataSource respondsToSelector:@selector(configureCell:forIndexPath:)]) {
+				if([self.tableView.dataSource respondsToSelector:@selector(configureCell:withData:)]) {
 					UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
                     if (cell) {
-                        [((id <DRYCoreDataTableViewDataSource>) self.tableView.dataSource) configureCell:cell forIndexPath:indexPath];
+                        [((id <DRYCoreDataTableViewDataSource>) self.tableView.dataSource) configureCell:cell withData:anObject];
                     }
 				}
                 break;
