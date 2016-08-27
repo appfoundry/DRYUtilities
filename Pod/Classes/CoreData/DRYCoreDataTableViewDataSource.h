@@ -12,7 +12,7 @@
 @protocol DRYCoreDataTableViewDataSource <NSObject>
 
 /**
- Called by the DRYCoreDataTableViewController when an update is detected for the given cell at the given indexpath. Your implementation of this method will typically use the fetched results controller to get the updated data. You should probably call this method from within the tableView:cellForRowAtIndexPath: method after dequeueing a cell.
+ Called by the DRYCoreDataTableViewController when an update is detected, represented by the given data for the given cell.
  */
 - (void)configureCell:(UITableViewCell *)cell withData:(id)data;
 
