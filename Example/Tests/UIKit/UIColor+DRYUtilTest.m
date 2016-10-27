@@ -16,14 +16,44 @@
 
 @implementation UIColor_DRYUtilTest
 
-- (void)testHexStringIsSameAsRgbColor {
-    UIColor *color = [UIColor dryColorFromRGBHexString:@"#FF00FF"];
-    
+- (void)testHexStringWithSingleRGBHexNumberIsSameAsRgbColor {
+    UIColor *color = [UIColor dryColorFromRGBHexString:@"#F0F"];
+
     const CGFloat *components = CGColorGetComponents(color.CGColor);
     assertThatDouble(components[0], is(equalTo(@(1))));
     assertThatDouble(components[1], is(equalTo(@(0))));
     assertThatDouble(components[2], is(equalTo(@(1))));
     assertThatDouble(CGColorGetAlpha(color.CGColor), is(equalTo(@(1))));
+}
+
+- (void)testHexStringWithDoubleRGBHexNumberIsSameAsRgbColor {
+    UIColor *color = [UIColor dryColorFromRGBHexString:@"#FF00FF"];
+
+    const CGFloat *components = CGColorGetComponents(color.CGColor);
+    assertThatDouble(components[0], is(equalTo(@(1))));
+    assertThatDouble(components[1], is(equalTo(@(0))));
+    assertThatDouble(components[2], is(equalTo(@(1))));
+    assertThatDouble(CGColorGetAlpha(color.CGColor), is(equalTo(@(1))));
+}
+
+- (void)testHexStringWithSingleRGBAHexNumberIsSameAsRgbColor {
+    UIColor *color = [UIColor dryColorFromRGBHexString:@"#F0F0"];
+
+    const CGFloat *components = CGColorGetComponents(color.CGColor);
+    assertThatDouble(components[0], is(equalTo(@(1))));
+    assertThatDouble(components[1], is(equalTo(@(0))));
+    assertThatDouble(components[2], is(equalTo(@(1))));
+    assertThatDouble(CGColorGetAlpha(color.CGColor), is(equalTo(@(0))));
+}
+
+- (void)testHexStringWithDoubleRGBAHexNumberIsSameAsRgbColor {
+    UIColor *color = [UIColor dryColorFromRGBHexString:@"#FF00FF00"];
+    
+    const CGFloat *components = CGColorGetComponents(color.CGColor);
+    assertThatDouble(components[0], is(equalTo(@(1))));
+    assertThatDouble(components[1], is(equalTo(@(0))));
+    assertThatDouble(components[2], is(equalTo(@(1))));
+    assertThatDouble(CGColorGetAlpha(color.CGColor), is(equalTo(@(0))));
 }
 
 - (void)testColorWithRGBValues {
